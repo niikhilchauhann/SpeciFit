@@ -1,0 +1,94 @@
+name: specifit
+description: SpeciFit-Fitness App.
+publish_to: none
+
+version: 1.2.6+26
+
+environment:
+  sdk: ">=2.18.4 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons:
+  # carousel_slider:
+  firebase_auth:
+  cloud_firestore:
+  google_mobile_ads:
+  percent_indicator:
+  # fl_chart:
+  shared_preferences:
+  awesome_dialog:
+  cached_network_image:
+  flutter_native_splash:
+  youtube_player_iframe:
+  pedometer:
+  permission_handler:
+  dropdown_button2:
+  animations:
+  hive:
+  hive_flutter:
+  flutter_heatmap_calendar:
+  url_launcher:
+  firebase_core:
+  firebase_messaging:
+  http:
+  flutter_local_notifications:
+  elegant_notification:
+  better_player:
+  font_awesome_flutter:
+  google_nav_bar:
+  provider:
+  intl:
+  flex_color_scheme:
+
+dev_dependencies:
+  flutter_lints:
+  hive_generator:
+  build_runner:
+  flutter_launcher_icons:
+#flutter pub run flutter_launcher_icons
+
+flutter_icons:
+  android: "launcher_icon"
+  image_path: "assets/images/splash.png"
+  min_sdk_android: 21
+  adaptive_icon_background: "#1091df"
+  adaptive_icon_foreground: "assets/images/splash.png"
+
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints:
+#flutter pub run flutter_native_splash:create
+flutter_native_splash:
+  color: "#1091df"
+  image: assets/images/splash.png
+  branding: assets/images/branding.png
+  branding_mode: bottom
+
+  android_12:
+    image: assets/images/splash12.png
+    color: "#1091df"
+    branding: assets/images/branding12.png
+    branding_mode: bottom
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/
+    - assets/images/workout/
+    - assets/man/
+    - assets/woman/
+    - assets/fitness_app/
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/font/Poppins-Light.ttf
+        - asset: assets/font/Poppins-Regular.ttf
+        - asset: assets/font/Poppins-Medium.ttf
+        - asset: assets/font/Poppins-SemiBold.ttf
+        - asset: assets/font/Poppins-Bold.ttf
