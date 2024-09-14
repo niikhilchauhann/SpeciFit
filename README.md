@@ -15,9 +15,7 @@ SpeciFit is a fitness app designed to help users track their workouts, set fitne
 ## UI/UX Design
 Below are the images showcasing the UI/UX design of SpeciFit:
 
-| ![Home Screen](images/home-screen.png) | ![Workout Tracker](images/workout-tracker.png) |
-|:---:|:---:|
-| **Home Screen** | **Workout Tracker** |
+| (https://sf0.market.xiaomi.com/thumbnail/png/h530/AppStore/01425c11693d3414d8142bbf2b360165ddc4a7765) | (https://sf0.market.xiaomi.com/thumbnail/png/h530/AppStore/027e3bfdfb7de46cd9fc29d1478d541ea11d5f6c8) | (https://sf0.market.xiaomi.com/thumbnail/png/h530/AppStore/04af536688dcf40aab113d9e16b548f5725c8a740) | (https://sf0.market.xiaomi.com/thumbnail/png/h530/AppStore/0728809945d934bcaa99ed0ec6aebcd8e27305796)
 
 ## Future Plans
 1. **Advanced Analytics**: Provide users with detailed analytics and insights about their fitness progress.
