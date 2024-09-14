@@ -15,7 +15,14 @@ SpeciFit is a fitness app designed to help users track their workouts, set fitne
 ## UI/UX Design
 Below are the images showcasing the UI/UX design of SpeciFit:
 
-| (https://sf0.market.xiaomi.com/thumbnail/png/h530/AppStore/01425c11693d3414d8142bbf2b360165ddc4a7765) | (https://sf0.market.xiaomi.com/thumbnail/png/h530/AppStore/027e3bfdfb7de46cd9fc29d1478d541ea11d5f6c8) | (https://sf0.market.xiaomi.com/thumbnail/png/h530/AppStore/04af536688dcf40aab113d9e16b548f5725c8a740) | (https://sf0.market.xiaomi.com/thumbnail/png/h530/AppStore/0728809945d934bcaa99ed0ec6aebcd8e27305796)
+<table>
+  <tr>
+    <td><img src="https://sf0.market.xiaomi.com/thumbnail/png/h530/AppStore/01425c11693d3414d8142bbf2b360165ddc4a7765" alt="UI Screenshot 1" width="200"/></td>
+    <td><img src="https://sf0.market.xiaomi.com/thumbnail/png/h530/AppStore/027e3bfdfb7de46cd9fc29d1478d541ea11d5f6c8" alt="UI Screenshot 2" width="200"/></td>
+    <td><img src="https://sf0.market.xiaomi.com/thumbnail/png/h530/AppStore/04af536688dcf40aab113d9e16b548f5725c8a740" alt="UI Screenshot 3" width="200"/></td>
+    <td><img src="https://sf0.market.xiaomi.com/thumbnail/png/h530/AppStore/0728809945d934bcaa99ed0ec6aebcd8e27305796" alt="UI Screenshot 4" width="200"/></td>
+  </tr>
+</table>
 
 ## Future Plans
 1. **Advanced Analytics**: Provide users with detailed analytics and insights about their fitness progress.
