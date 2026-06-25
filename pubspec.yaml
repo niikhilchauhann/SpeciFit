@@ -1,0 +1,102 @@
+name: specifit
+description: "A new Flutter project."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.1+2
+
+environment:
+  sdk: ^3.12.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.8
+  flashy_tab_bar2: ^0.0.10
+  fl_chart: ^0.70.0
+  percent_indicator: ^4.2.4
+  liquid_progress_indicator_v2: ^0.5.0
+  firebase_auth: ^5.3.4
+  firebase_core: ^3.9.0
+  cloud_firestore: ^5.6.0
+  http: ^1.2.2
+  hive_flutter: ^1.1.0
+  hive: ^2.2.3
+  elegant_notification: ^2.4.1
+  intl: ^0.20.1
+  cached_network_image: ^3.4.1
+  youtube_player_iframe: ^5.2.1
+  pedometer: ^4.2.0
+  shared_preferences: ^2.3.5
+  awesome_dialog: ^3.2.1
+  flutter_heatmap_calendar: ^1.0.5
+  carousel_slider: ^5.0.0
+  flutter_chat_ui: ^1.6.15
+  webview_flutter: ^4.10.0
+  uuid: ^4.5.1
+  flutter_chat_types: ^3.6.2
+  image_picker: ^1.1.2
+  google_generative_ai: ^0.4.6
+  flutter_tts: ^4.2.5
+  speech_to_text: ^7.4.0
+  path_provider: ^2.1.5
+  loading_indicator: ^3.1.1
+  permission_handler: ^11.3.1
+  sidebarx: ^0.17.1
+  
+  dropdown_button2:
+  flutter_blue_plus: ^1.35.2
+
+  path: any
+  health: ^13.3.1
+  easy_date_timeline: ^2.0.9
+  home_widget: ^0.9.3
+  flutter_riverpod: ^3.3.2
+  fatsecret_nutrition: ^0.1.4
+  flutter_dotenv: ^6.0.1
+  logging: ^1.3.0
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+flutter:
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/
+    - assets/images/workout/
+    - assets/fitness_app/
+    - assets/woman/
+    - assets/man/
+    - assets/
+    - .env
+
+  fonts:
+    - family: Gilroy
+      fonts:
+        # - asset: assets/fonts/gilroy/Gilroy-Thin.ttf
+        #   weight: 100
+        # - asset: assets/fonts/gilroy/Gilroy-UltraLight.ttf
+        #   weight: 200
+        # - asset: assets/fonts/gilroy/Gilroy-Light.ttf
+        #   weight: 300
+        # - asset: assets/fonts/gilroy/Gilroy-Regular.ttf
+        #   weight: 400
+        - asset: assets/fonts/gilroy/Gilroy-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/gilroy/Gilroy-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/gilroy/Gilroy-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/gilroy/Gilroy-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/gilroy/Gilroy-Black.ttf
+          weight: 900

@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "87064617659",
+    "project_id": "specifit-app",
+    "storage_bucket": "specifit-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:87064617659:android:2c13a9207fd584aa4c7f9e",
+        "android_client_info": {
+          "package_name": "com.edencorp.myfitnessapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "87064617659-tfkgmno721k6k3gq16hcpj8ufcdaq56v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOt_NsiplIvXRzjXsUXCh2ICa6ZkDsQ78"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "87064617659-tfkgmno721k6k3gq16hcpj8ufcdaq56v.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "87064617659-5pc9a47amfkgouvun7s3oon0iq6mfsfs.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.edencorp.specifit"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

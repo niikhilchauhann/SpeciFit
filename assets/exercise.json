@@ -1,0 +1,2155 @@
+{
+  "Chest": [
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1271.gif",
+      "name": "Chest and front of shoulder stretch",
+      "target": "Pectorals"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0279.gif",
+      "name": "Decline push up",
+      "target": "Pectorals"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1167.gif",
+      "name": "Dynamic chest stretch (male)",
+      "target": "Pectorals"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0492.gif",
+      "name": "Incline push up depth jump",
+      "target": "Pectorals"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0493.gif",
+      "name": "Incline push up",
+      "target": "Pectorals"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3785.gif",
+      "name": "Incline push up (on box)",
+      "target": "Pectorals"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0494.gif",
+      "name": "Incline reverse grip push up",
+      "target": "Pectorals"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1297.gif",
+      "name": "Chest squeeze",
+      "target": "Pectorals"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0500.gif",
+      "name": "Wipers",
+      "target": "Pectorals"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3211.gif",
+      "name": "Kneeling push up",
+      "target": "Pectorals"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3217.gif",
+      "name": "Modified hindu push up",
+      "target": "Pectorals"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0662.gif",
+      "name": "Push up",
+      "target": "Pectorals"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0659.gif",
+      "name": "Push up (wall)",
+      "target": "Pectorals"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0658.gif",
+      "name": "Push up (wall) v. 2",
+      "target": "Pectorals"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0666.gif",
+      "name": "Raise single arm push up",
+      "target": "Pectorals"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0699.gif",
+      "name": "Shoulder tap push up",
+      "target": "Pectorals"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1311.gif",
+      "name": "Wide hand push up",
+      "target": "Pectorals"
+    }
+  ],
+  "Chest1": [
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3294.gif",
+      "name": "Archer push up",
+      "target": "Pectorals"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1271.gif",
+      "name": "Chest and front of shoulder stretch",
+      "target": "Pectorals"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1273.gif",
+      "name": "Clap push up",
+      "target": "Pectorals"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0279.gif",
+      "name": "Decline push up",
+      "target": "Pectorals"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1167.gif",
+      "name": "Dynamic chest stretch (male)",
+      "target": "Pectorals"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0493.gif",
+      "name": "Incline push up",
+      "target": "Pectorals"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0494.gif",
+      "name": "Incline reverse grip push up",
+      "target": "Pectorals"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1297.gif",
+      "name": "Isometric chest squeeze",
+      "target": "Pectorals"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0500.gif",
+      "name": "Isometric wipers",
+      "target": "Pectorals"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3211.gif",
+      "name": "Kneeling push up (male)",
+      "target": "Pectorals"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3217.gif",
+      "name": "Modified hindu push up (male)",
+      "target": "Pectorals"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0662.gif",
+      "name": "Push up",
+      "target": "Pectorals"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0658.gif",
+      "name": "Push up (wall) v. 2",
+      "target": "Pectorals"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0666.gif",
+      "name": "Raise single arm push up",
+      "target": "Pectorals"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0699.gif",
+      "name": "Shoulder tap push up",
+      "target": "Pectorals"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0806.gif",
+      "name": "Suspended push up",
+      "target": "Pectorals"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1311.gif",
+      "name": "Wide hand push up",
+      "target": "Pectorals"
+    }
+  ],
+  "Chest2": [
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3294.gif",
+      "name": "Archer push up",
+      "target": "Pectorals"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1271.gif",
+      "name": "Chest and front of shoulder stretch",
+      "target": "Pectorals"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2462.gif",
+      "name": "Chest dip on straight bar",
+      "target": "Pectorals"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3216.gif",
+      "name": "Chest tap push up",
+      "target": "Pectorals"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1273.gif",
+      "name": "Clap push up",
+      "target": "Pectorals"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0258.gif",
+      "name": "Clock push up",
+      "target": "Pectorals"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1275.gif",
+      "name": "Drop push up",
+      "target": "Pectorals"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1167.gif",
+      "name": "Dynamic chest stretch",
+      "target": "Pectorals"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0492.gif",
+      "name": "Decline push up depth jump",
+      "target": "Pectorals"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0493.gif",
+      "name": "Incline push up",
+      "target": "Pectorals"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0494.gif",
+      "name": "Incline reverse grip push up",
+      "target": "Pectorals"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1297.gif",
+      "name": "Isometric chest squeeze",
+      "target": "Pectorals"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3145.gif",
+      "name": "Push up plus",
+      "target": "Pectorals"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0666.gif",
+      "name": "Raise single arm push up",
+      "target": "Pectorals"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0699.gif",
+      "name": "Shoulder tap push up",
+      "target": "Pectorals"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0725.gif",
+      "name": "Single arm push up",
+      "target": "Pectorals"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0803.gif",
+      "name": "Superman push up",
+      "target": "Pectorals"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0806.gif",
+      "name": "Suspended push up",
+      "target": "Pectorals"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1311.gif",
+      "name": "Wide hand push up",
+      "target": "Pectorals"
+    }
+  ],
+  "Back": [
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1405.gif",
+      "name": "Back pec stretch",
+      "target": "Lats"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3019.gif",
+      "name": "Bench pull ups",
+      "target": "Lats"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3168.gif",
+      "name": "Bodyweight squatting row",
+      "target": "Upper back"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3158.gif",
+      "name": "Bodyweight standing close grip row",
+      "target": "Upper back"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3166.gif",
+      "name": "Bodyweight standing row",
+      "target": "Upper back"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1327.gif",
+      "name": "Close grip chin up",
+      "target": "Lats"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0488.gif",
+      "name": "Hyperextension (on bench)",
+      "target": "Spine"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2300.gif",
+      "name": "Inverted row bent knees",
+      "target": "Upper back"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1346.gif",
+      "name": "Kneeling lat stretch",
+      "target": "Lats"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1352.gif",
+      "name": "Lower back curl",
+      "target": "Spine"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1355.gif",
+      "name": "One arm against wall",
+      "target": "Lats"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3012.gif",
+      "name": "Scapula dips",
+      "target": "Traps"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0690.gif",
+      "name": "Seated lower back stretch",
+      "target": "Lats"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1358.gif",
+      "name": "Side lying floor stretch",
+      "target": "Lats"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1363.gif",
+      "name": "Spine stretch",
+      "target": "Spine"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0794.gif",
+      "name": "Standing lateral stretch",
+      "target": "Lats"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3231.gif",
+      "name": "Two toe touch (male)",
+      "target": "Spine"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1365.gif",
+      "name": "Upper back stretch",
+      "target": "Upper back"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1366.gif",
+      "name": "Upward facing dog",
+      "target": "Spine"
+    }
+  ],
+  "Back1": [
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1405.gif",
+      "name": "Back pec stretch",
+      "target": "Lats"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3167.gif",
+      "name": "Bodyweight squatting row (with towel)",
+      "target": "Upper back"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3156.gif",
+      "name": "Bodyweight standing close grip one arm row",
+      "target": "Upper back"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3162.gif",
+      "name": "Bodyweight standing one arm row",
+      "target": "Upper back"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3165.gif",
+      "name": "Bodyweight standing row (with towel)",
+      "target": "Upper back"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1326.gif",
+      "name": "Chin up",
+      "target": "Lats"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1772.gif",
+      "name": "Elbow lift/reverse push up",
+      "target": "Upper back"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0489.gif",
+      "name": "Hyperextension",
+      "target": "Spine"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0499.gif",
+      "name": "Inverted row",
+      "target": "Upper back"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1346.gif",
+      "name": "Kneeling lat stretch",
+      "target": "Lats"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0627.gif",
+      "name": "Mixed grip chin up",
+      "target": "Lats"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1773.gif",
+      "name": "One arm towel row",
+      "target": "Upper back"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0651.gif",
+      "name": "Pull up (neutral grip)",
+      "target": "Lats"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0690.gif",
+      "name": "Seated lower back stretch",
+      "target": "Lats"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1358.gif",
+      "name": "Side lying floor stretch",
+      "target": "Lats"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0720.gif",
+      "name": "Side to side chin",
+      "target": "Lats"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1362.gif",
+      "name": "Sphinx",
+      "target": "Spine"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1363.gif",
+      "name": "Spine stretch",
+      "target": "Spine"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0794.gif",
+      "name": "Standing lateral stretch",
+      "target": "Lats"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1364.gif",
+      "name": "Standing pelvic tilt",
+      "target": "Spine"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3231.gif",
+      "name": "Two toe touch (male)",
+      "target": "Spine"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1365.gif",
+      "name": "Upper back stretch",
+      "target": "Upper back"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1366.gif",
+      "name": "Upward facing dog",
+      "target": "Spine"
+    }
+  ],
+  "Back2": [
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3293.gif",
+      "name": "Archer pull up",
+      "target": "Lats"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3297.gif",
+      "name": "Back lever",
+      "target": "Upper back"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1405.gif",
+      "name": "Back pec stretch",
+      "target": "Lats"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3019.gif",
+      "name": "Bench pull ups",
+      "target": "Lats"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3168.gif",
+      "name": "Bodyweight squatting row",
+      "target": "Upper back"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3167.gif",
+      "name": "Bodyweight squatting row (with towel)",
+      "target": "Upper back"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3156.gif",
+      "name": "Bodyweight standing close grip one arm row",
+      "target": "Upper back"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3158.gif",
+      "name": "Bodyweight standing close grip row",
+      "target": "Upper back"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3162.gif",
+      "name": "Bodyweight standing one arm row",
+      "target": "Upper back"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3161.gif",
+      "name": "Bodyweight standing one arm row (with towel)",
+      "target": "Upper back"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3166.gif",
+      "name": "Bodyweight standing row",
+      "target": "Upper back"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3165.gif",
+      "name": "Bodyweight standing row (with towel)",
+      "target": "Upper back"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1326.gif",
+      "name": "Chin up",
+      "target": "Lats"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0253.gif",
+      "name": "Chin ups (narrow parallel grip)",
+      "target": "Upper back"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1327.gif",
+      "name": "Close grip chin up",
+      "target": "Lats"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1772.gif",
+      "name": "Elbow lift   reverse push up",
+      "target": "Upper back"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3292.gif",
+      "name": "Elevator",
+      "target": "Upper back"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3295.gif",
+      "name": "Front lever reps",
+      "target": "Upper back"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0466.gif",
+      "name": "Gironda sternum chin",
+      "target": "Lats"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0489.gif",
+      "name": "Hyperextension",
+      "target": "Spine"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0488.gif",
+      "name": "Hyperextension (on bench)",
+      "target": "Spine"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0499.gif",
+      "name": "Inverted row",
+      "target": "Upper back"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2300.gif",
+      "name": "Inverted row bent knees",
+      "target": "Upper back"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2298.gif",
+      "name": "Inverted row on bench",
+      "target": "Upper back"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0497.gif",
+      "name": "Inverted row v. 2",
+      "target": "Upper back"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0498.gif",
+      "name": "Inverted row with straps",
+      "target": "Upper back"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0558.gif",
+      "name": "Kipping muscle up",
+      "target": "Lats"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1346.gif",
+      "name": "Kneeling lat stretch",
+      "target": "Lats"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3418.gif",
+      "name": "L pull up",
+      "target": "Lats"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1352.gif",
+      "name": "Lower back curl",
+      "target": "Spine"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0627.gif",
+      "name": "Mixed grip chin up",
+      "target": "Lats"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0631.gif",
+      "name": "Muscle up",
+      "target": "Lats"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1401.gif",
+      "name": "Muscle up (on vertical bar)",
+      "target": "Lats"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1355.gif",
+      "name": "One arm against wall",
+      "target": "Lats"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0638.gif",
+      "name": "One arm chin up",
+      "target": "Lats"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1773.gif",
+      "name": "One arm towel row",
+      "target": "Upper back"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0651.gif",
+      "name": "Pull up (neutral grip)",
+      "target": "Lats"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0652.gif",
+      "name": "Pull up",
+      "target": "Lats"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0670.gif",
+      "name": "Rear pull up",
+      "target": "Lats"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0674.gif",
+      "name": "Reverse grip pull up",
+      "target": "Lats"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0678.gif",
+      "name": "Rocky pull up pulldown",
+      "target": "Lats"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3012.gif",
+      "name": "Scapula dips",
+      "target": "Traps"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0688.gif",
+      "name": "Scapular pull up",
+      "target": "Traps"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0690.gif",
+      "name": "Seated lower back stretch",
+      "target": "Lats"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1763.gif",
+      "name": "Shoulder grip pull up",
+      "target": "Lats"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1358.gif",
+      "name": "Side lying floor stretch",
+      "target": "Lats"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0720.gif",
+      "name": "Side to side chin",
+      "target": "Lats"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3304.gif",
+      "name": "Skin the cat",
+      "target": "Upper back"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1362.gif",
+      "name": "Sphinx",
+      "target": "Spine"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1363.gif",
+      "name": "Spine stretch",
+      "target": "Spine"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3669.gif",
+      "name": "Standing archer",
+      "target": "Upper back"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0794.gif",
+      "name": "Standing lateral stretch",
+      "target": "Lats"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1364.gif",
+      "name": "Standing pelvic tilt",
+      "target": "Spine"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0808.gif",
+      "name": "Suspended row",
+      "target": "Upper back"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3231.gif",
+      "name": "Two toe touch (male)",
+      "target": "Spine"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1365.gif",
+      "name": "Upper back stretch",
+      "target": "Upper back"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1366.gif",
+      "name": "Upward facing dog",
+      "target": "Spine"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1429.gif",
+      "name": "Wide grip pull up",
+      "target": "Lats"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1367.gif",
+      "name": "Wide grip rear pull up",
+      "target": "Lats"
+    }
+  ],
+  "Shoulders": [
+    {
+      "bodyPart": "Shoulders",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2271.gif",
+      "name": "Left hook. Boxing",
+      "target": "Delts"
+    },
+    {
+      "bodyPart": "Shoulders",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0669.gif",
+      "name": "Rear deltoid stretch",
+      "target": "Delts"
+    },
+    {
+      "bodyPart": "Neck",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1403.gif",
+      "name": "Neck side stretch",
+      "target": "Levator scapulae"
+    },
+    {
+      "bodyPart": "Neck",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0716.gif",
+      "name": "Side push neck stretch",
+      "target": "Levator scapulae"
+    },
+    {
+      "bodyPart": "Shoulders",
+      "equipment": "Rope",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0128.gif",
+      "name": "Battling ropes",
+      "target": "Delts"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1365.gif",
+      "name": "Upper back stretch",
+      "target": "Upper back"
+    },
+    {
+      "bodyPart": "Upper arms",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3302.gif",
+      "name": "Handstand",
+      "target": "Triceps"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3294.gif",
+      "name": "Archer push up",
+      "target": "Pectorals"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0500.gif",
+      "name": "Wipers",
+      "target": "Pectorals"
+    }
+  ],
+  "Arms": [
+    {
+      "bodyPart": "Upper arms",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0129.gif",
+      "name": "Bench dip (knees bent)",
+      "target": "Triceps"
+    },
+    {
+      "bodyPart": "Upper arms",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1770.gif",
+      "name": "Biceps leg concentration curl",
+      "target": "Biceps"
+    },
+    {
+      "bodyPart": "Upper arms",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0137.gif",
+      "name": "Body up",
+      "target": "Triceps"
+    },
+    {
+      "bodyPart": "Upper arms",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1771.gif",
+      "name": "Bodyweight kneeling triceps extension",
+      "target": "Triceps"
+    },
+    {
+      "bodyPart": "Upper arms",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1769.gif",
+      "name": "Bodyweight side lying biceps curl",
+      "target": "Biceps"
+    },
+    {
+      "bodyPart": "Upper arms",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2398.gif",
+      "name": "Close grip push up (on knees)",
+      "target": "Triceps"
+    },
+    {
+      "bodyPart": "Upper arms",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0490.gif",
+      "name": "Incline close grip push up",
+      "target": "Triceps"
+    },
+    {
+      "bodyPart": "Upper arms",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0643.gif",
+      "name": "Overhead triceps stretch",
+      "target": "Triceps"
+    },
+    {
+      "bodyPart": "Upper arms",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0672.gif",
+      "name": "Reverse dip",
+      "target": "Triceps"
+    },
+    {
+      "bodyPart": "Upper arms",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0815.gif",
+      "name": "Triceps dips floor",
+      "target": "Triceps"
+    },
+    {
+      "bodyPart": "Upper arms",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0817.gif",
+      "name": "Triceps stretch",
+      "target": "Triceps"
+    }
+  ],
+  "Arms1": [
+    {
+      "bodyPart": "Upper arms",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1399.gif",
+      "name": "Bench dip on floor",
+      "target": "Triceps"
+    },
+    {
+      "bodyPart": "Upper arms",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1770.gif",
+      "name": "Biceps leg concentration curl",
+      "target": "Biceps"
+    },
+    {
+      "bodyPart": "Upper arms",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0140.gif",
+      "name": "Biceps pull up",
+      "target": "Biceps"
+    },
+    {
+      "bodyPart": "Upper arms",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0137.gif",
+      "name": "Body up",
+      "target": "Triceps"
+    },
+    {
+      "bodyPart": "Upper arms",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1771.gif",
+      "name": "Bodyweight kneeling triceps extension",
+      "target": "Triceps"
+    },
+    {
+      "bodyPart": "Upper arms",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1769.gif",
+      "name": "Bodyweight side lying biceps curl",
+      "target": "Biceps"
+    },
+    {
+      "bodyPart": "Upper arms",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0259.gif",
+      "name": "Close grip push up",
+      "target": "Triceps"
+    },
+    {
+      "bodyPart": "Upper arms",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0283.gif",
+      "name": "Diamond push up",
+      "target": "Triceps"
+    },
+    {
+      "bodyPart": "Upper arms",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0490.gif",
+      "name": "Incline close grip push up",
+      "target": "Triceps"
+    },
+    {
+      "bodyPart": "Upper arms",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0643.gif",
+      "name": "Overhead triceps stretch",
+      "target": "Triceps"
+    },
+    {
+      "bodyPart": "Upper arms",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1467.gif",
+      "name": "Push up on lower arms",
+      "target": "Triceps"
+    },
+    {
+      "bodyPart": "Upper arms",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0672.gif",
+      "name": "Reverse dip",
+      "target": "Triceps"
+    },
+    {
+      "bodyPart": "Upper arms",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0717.gif",
+      "name": "Side push up",
+      "target": "Triceps"
+    },
+    {
+      "bodyPart": "Upper arms",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0816.gif",
+      "name": "Triceps press",
+      "target": "Triceps"
+    },
+    {
+      "bodyPart": "Upper arms",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0817.gif",
+      "name": "Triceps stretch",
+      "target": "Triceps"
+    }
+  ],
+  "Arms2": [
+    {
+      "bodyPart": "Upper arms",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1770.gif",
+      "name": "Biceps leg concentration curl",
+      "target": "Biceps"
+    },
+    {
+      "bodyPart": "Upper arms",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0139.gif",
+      "name": "Biceps narrow pull ups",
+      "target": "Biceps"
+    },
+    {
+      "bodyPart": "Upper arms",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0137.gif",
+      "name": "Body up",
+      "target": "Triceps"
+    },
+    {
+      "bodyPart": "Upper arms",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0259.gif",
+      "name": "Close grip push up",
+      "target": "Triceps"
+    },
+    {
+      "bodyPart": "Upper arms",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0283.gif",
+      "name": "Diamond push up",
+      "target": "Triceps"
+    },
+    {
+      "bodyPart": "Upper arms",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3302.gif",
+      "name": "Handstand",
+      "target": "Triceps"
+    },
+    {
+      "bodyPart": "Upper arms",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0490.gif",
+      "name": "Incline close grip push up",
+      "target": "Triceps"
+    },
+    {
+      "bodyPart": "Upper arms",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0639.gif",
+      "name": "One arm dip",
+      "target": "Triceps"
+    },
+    {
+      "bodyPart": "Upper arms",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0643.gif",
+      "name": "Overhead triceps stretch",
+      "target": "Triceps"
+    },
+    {
+      "bodyPart": "Upper arms",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1467.gif",
+      "name": "Push up on lower arms",
+      "target": "Triceps"
+    },
+    {
+      "bodyPart": "Upper arms",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0672.gif",
+      "name": "Reverse dip",
+      "target": "Triceps"
+    },
+    {
+      "bodyPart": "Upper arms",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0717.gif",
+      "name": "Side push up",
+      "target": "Triceps"
+    },
+    {
+      "bodyPart": "Upper arms",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1753.gif",
+      "name": "Three bench dip",
+      "target": "Triceps"
+    },
+    {
+      "bodyPart": "Upper arms",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0813.gif",
+      "name": "Triceps dip (between benches)",
+      "target": "Triceps"
+    },
+    {
+      "bodyPart": "Upper arms",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0816.gif",
+      "name": "Triceps press",
+      "target": "Triceps"
+    },
+    {
+      "bodyPart": "Upper arms",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0817.gif",
+      "name": "Triceps stretch",
+      "target": "Triceps"
+    }
+  ],
+  "Legs": [
+    {
+      "bodyPart": "Upper legs",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1512.gif",
+      "name": "All fours squad stretch",
+      "target": "Quads"
+    },
+    {
+      "bodyPart": "Upper legs",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3212.gif",
+      "name": "Basic toe touch (male)",
+      "target": "Glutes"
+    },
+    {
+      "bodyPart": "Upper legs",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0130.gif",
+      "name": "Bench hip extension",
+      "target": "Glutes"
+    },
+    {
+      "bodyPart": "Upper legs",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1494.gif",
+      "name": "Butterfly yoga pose",
+      "target": "Adductors"
+    },
+    {
+      "bodyPart": "Lower legs",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1407.gif",
+      "name": "Calf push stretch with hands against wall",
+      "target": "Calves"
+    },
+    {
+      "bodyPart": "Upper legs",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1548.gif",
+      "name": "Chair leg extended stretch",
+      "target": "Quads"
+    },
+    {
+      "bodyPart": "Lower legs",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0257.gif",
+      "name": "Circles knee stretch",
+      "target": "Calves"
+    },
+    {
+      "bodyPart": "Upper legs",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0459.gif",
+      "name": "Flutter kicks",
+      "target": "Glutes"
+    },
+    {
+      "bodyPart": "Upper legs",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3561.gif",
+      "name": "Glute bridge march",
+      "target": "Glutes"
+    },
+    {
+      "bodyPart": "Upper legs",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1511.gif",
+      "name": "Hamstring stretch",
+      "target": "Hamstrings"
+    },
+    {
+      "bodyPart": "Upper legs",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1418.gif",
+      "name": "Hug keens to chest",
+      "target": "Glutes"
+    },
+    {
+      "bodyPart": "Upper legs",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3132.gif",
+      "name": "Potty squat with support",
+      "target": "Glutes"
+    },
+    {
+      "bodyPart": "Upper legs",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0795.gif",
+      "name": "Standing single leg curl",
+      "target": "Hamstrings"
+    },
+    {
+      "bodyPart": "Upper legs",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1604.gif",
+      "name": "Long stretch",
+      "target": "Hamstrings"
+    }
+  ],
+  "Legs1": [
+    {
+      "bodyPart": "Upper legs",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1512.gif",
+      "name": "All fours squad stretch",
+      "target": "Quads"
+    },
+    {
+      "bodyPart": "Upper legs",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3214.gif",
+      "name": "Arms apart circular toe touch (male)",
+      "target": "Glutes"
+    },
+    {
+      "bodyPart": "Upper legs",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1473.gif",
+      "name": "Backward jump",
+      "target": "Quads"
+    },
+    {
+      "bodyPart": "Upper legs",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0130.gif",
+      "name": "Bench hip extension",
+      "target": "Glutes"
+    },
+    {
+      "bodyPart": "Upper legs",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3543.gif",
+      "name": "Bodyweight drop jump squat",
+      "target": "Glutes"
+    },
+    {
+      "bodyPart": "Lower legs",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1373.gif",
+      "name": "Bodyweight standing calf raise",
+      "target": "Calves"
+    },
+    {
+      "bodyPart": "Upper legs",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1494.gif",
+      "name": "Butterfly yoga pose",
+      "target": "Adductors"
+    },
+    {
+      "bodyPart": "Upper legs",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1548.gif",
+      "name": "Chair leg extended stretch",
+      "target": "Quads"
+    },
+    {
+      "bodyPart": "Upper legs",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3769.gif",
+      "name": "Curtsey squat",
+      "target": "Glutes"
+    },
+    {
+      "bodyPart": "Lower legs",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0284.gif",
+      "name": "Donkey calf raise",
+      "target": "Calves"
+    },
+    {
+      "bodyPart": "Upper legs",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0459.gif",
+      "name": "Flutter kicks",
+      "target": "Glutes"
+    },
+    {
+      "bodyPart": "Upper legs",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3470.gif",
+      "name": "Forward lunge (male)",
+      "target": "Glutes"
+    },
+    {
+      "bodyPart": "Upper legs",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3523.gif",
+      "name": "Glute bridge two legs on bench (male)",
+      "target": "Glutes"
+    },
+    {
+      "bodyPart": "Upper legs",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3218.gif",
+      "name": "Hands clasped circular toe touch (male)",
+      "target": "Glutes"
+    },
+    {
+      "bodyPart": "Upper legs",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0514.gif",
+      "name": "Jump squat",
+      "target": "Glutes"
+    },
+    {
+      "bodyPart": "Upper legs",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1576.gif",
+      "name": "Leg up hamstring stretch",
+      "target": "Hamstrings"
+    },
+    {
+      "bodyPart": "Upper legs",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3662.gif",
+      "name": "Pike to cobra push up",
+      "target": "Glutes"
+    },
+    {
+      "bodyPart": "Upper legs",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3132.gif",
+      "name": "Potty squat with support",
+      "target": "Glutes"
+    },
+    {
+      "bodyPart": "Upper legs",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2368.gif",
+      "name": "Split squats",
+      "target": "Quads"
+    }
+  ],
+  "Legs2": [
+    {
+      "bodyPart": "Upper legs",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1512.gif",
+      "name": "All fours squad stretch",
+      "target": "Quads"
+    },
+    {
+      "bodyPart": "Upper legs",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3214.gif",
+      "name": "Arms apart circular toe touch (male)",
+      "target": "Glutes"
+    },
+    {
+      "bodyPart": "Lower legs",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1374.gif",
+      "name": "Box jump down with one leg stabilization",
+      "target": "Calves"
+    },
+    {
+      "bodyPart": "Upper legs",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3769.gif",
+      "name": "Curtsey squat",
+      "target": "Glutes"
+    },
+    {
+      "bodyPart": "Upper legs",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1472.gif",
+      "name": "Forward jump",
+      "target": "Quads"
+    },
+    {
+      "bodyPart": "Upper legs",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3470.gif",
+      "name": "Forward lunge (male)",
+      "target": "Glutes"
+    },
+    {
+      "bodyPart": "Upper legs",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3561.gif",
+      "name": "Glute bridge march",
+      "target": "Glutes"
+    },
+    {
+      "bodyPart": "Upper legs",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0513.gif",
+      "name": "Deep jump squat",
+      "target": "Glutes"
+    },
+    {
+      "bodyPart": "Upper legs",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0555.gif",
+      "name": "Kick out sit",
+      "target": "Hamstrings"
+    },
+    {
+      "bodyPart": "Upper legs",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3582.gif",
+      "name": "Lunge with jump",
+      "target": "Glutes"
+    },
+    {
+      "bodyPart": "Upper legs",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1476.gif",
+      "name": "One leg squat",
+      "target": "Glutes"
+    },
+    {
+      "bodyPart": "Upper legs",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3662.gif",
+      "name": "Pike to cobra push up",
+      "target": "Glutes"
+    },
+    {
+      "bodyPart": "Upper legs",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3132.gif",
+      "name": "Potty squat with support",
+      "target": "Glutes"
+    },
+    {
+      "bodyPart": "Upper legs",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3533.gif",
+      "name": "Quads",
+      "target": "Quads"
+    },
+    {
+      "bodyPart": "Upper legs",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3552.gif",
+      "name": "Quick feet",
+      "target": "Quads"
+    },
+    {
+      "bodyPart": "Upper legs",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0697.gif",
+      "name": "Self assisted inverse leg curl",
+      "target": "Hamstrings"
+    },
+    {
+      "bodyPart": "Upper legs",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1759.gif",
+      "name": "Single leg squat (pistol) male",
+      "target": "Glutes"
+    },
+    {
+      "bodyPart": "Upper legs",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1489.gif",
+      "name": "Sissy squat",
+      "target": "Quads"
+    },
+    {
+      "bodyPart": "Upper legs",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1685.gif",
+      "name": "Squat to overhead reach",
+      "target": "Quads"
+    },
+    {
+      "bodyPart": "Upper legs",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1460.gif",
+      "name": "Walking lunge",
+      "target": "Glutes"
+    }
+  ],
+  "Abs": [
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0001.gif",
+      "name": "Half sit up",
+      "target": "Abs"
+    },
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0003.gif",
+      "name": "Air bike",
+      "target": "Abs"
+    },
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0006.gif",
+      "name": "Alternate heel touchers",
+      "target": "Abs"
+    },
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0138.gif",
+      "name": "Bottoms up",
+      "target": "Abs"
+    },
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2466.gif",
+      "name": "Mountain climber (cross body)",
+      "target": "Abs"
+    },
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0870.gif",
+      "name": "Butt ups",
+      "target": "Abs"
+    },
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0274.gif",
+      "name": "Crunch floor",
+      "target": "Abs"
+    },
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0464.gif",
+      "name": "Front plank with twist",
+      "target": "Abs"
+    },
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3640.gif",
+      "name": "Knee touch crunch",
+      "target": "Abs"
+    },
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0620.gif",
+      "name": "Lying leg raise flat bench",
+      "target": "Abs"
+    },
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0635.gif",
+      "name": "Oblique crunches floor",
+      "target": "Abs"
+    },
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0872.gif",
+      "name": "Reverse crunch",
+      "target": "Abs"
+    }
+  ],
+  "Abs1": [
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0001.gif",
+      "name": "Half sit up",
+      "target": "Abs"
+    },
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0003.gif",
+      "name": "Air bike",
+      "target": "Abs"
+    },
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0006.gif",
+      "name": "Alternate heel touchers",
+      "target": "Abs"
+    },
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3204.gif",
+      "name": "Arms overhead full sit up (male)",
+      "target": "Abs"
+    },
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3544.gif",
+      "name": "Bodyweight incline side plank",
+      "target": "Abs"
+    },
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2466.gif",
+      "name": "Bridge   mountain climber (cross body)",
+      "target": "Abs"
+    },
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1468.gif",
+      "name": "Crab twist toe touch",
+      "target": "Abs"
+    },
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0262.gif",
+      "name": "Cross body crunch",
+      "target": "Abs"
+    },
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0274.gif",
+      "name": "Crunch floor",
+      "target": "Abs"
+    },
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0276.gif",
+      "name": "Dead bug",
+      "target": "Abs"
+    },
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0443.gif",
+      "name": "Elbow to knee",
+      "target": "Abs"
+    },
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0464.gif",
+      "name": "Front plank with twist",
+      "target": "Abs"
+    },
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0484.gif",
+      "name": "Hip raise (bent knee)",
+      "target": "Abs"
+    },
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1471.gif",
+      "name": "Inchworm",
+      "target": "Abs"
+    },
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0570.gif",
+      "name": "Leg pull in flat bench",
+      "target": "Abs"
+    },
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0635.gif",
+      "name": "Oblique crunches floor",
+      "target": "Abs"
+    },
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0872.gif",
+      "name": "Reverse crunch",
+      "target": "Abs"
+    },
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0687.gif",
+      "name": "Russian twist",
+      "target": "Abs"
+    },
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0689.gif",
+      "name": "Seated crunch",
+      "target": "Abs"
+    }
+  ],
+  "Abs2": [
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0003.gif",
+      "name": "Air bike",
+      "target": "Abs"
+    },
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3204.gif",
+      "name": "Arms overhead full sit up (male)",
+      "target": "Abs"
+    },
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/2466.gif",
+      "name": "Bridge   mountain climber (cross body)",
+      "target": "Abs"
+    },
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0262.gif",
+      "name": "Cross body crunch",
+      "target": "Abs"
+    },
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0267.gif",
+      "name": "Crunch (hands overhead)",
+      "target": "Abs"
+    },
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0456.gif",
+      "name": "Flexion leg sit up (bent knee)",
+      "target": "Abs"
+    },
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1764.gif",
+      "name": "Hanging leg hip raise",
+      "target": "Abs"
+    },
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3698.gif",
+      "name": "Inchworm v2",
+      "target": "Abs"
+    },
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0507.gif",
+      "name": "Jackknife sit up",
+      "target": "Abs"
+    },
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/1495.gif",
+      "name": "Oblique crunch v2",
+      "target": "Abs"
+    },
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0872.gif",
+      "name": "Reverse crunch",
+      "target": "Abs"
+    },
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0689.gif",
+      "name": "Seated crunch",
+      "target": "Abs"
+    },
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/3699.gif",
+      "name": "Shoulder tap",
+      "target": "Abs"
+    },
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "http://d205bpvrqc9yn1.cloudfront.net/0871.gif",
+      "name": "Tuck crunch",
+      "target": "Abs"
+    }
+  ]
+}
