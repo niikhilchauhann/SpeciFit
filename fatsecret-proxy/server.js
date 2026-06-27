@@ -85,20 +85,6 @@ app.get('/api/foods/search', async (req, res) => {
   }
 });
 
-// ─── Get food details ─────────────────────────────────────────────────────────
-// GET /api/foods/:id
-app.get('/api/foods/:id', async (req, res) => {
-  const { id } = req.params;
-  console.log(`[Proxy] Get food: ${id}`);
-  try {
-    const data = await fatSecretCall({ method: 'food.get.v4', food_id: id });
-    res.json(data);
-  } catch (err) {
-    console.error('[Proxy] Detail error:', err.message);
-    res.status(500).json({ error: err.message });
-  }
-});
-
 // ─── Autocomplete ─────────────────────────────────────────────────────────────
 // GET /api/foods/autocomplete?q=app&max=8
 app.get('/api/foods/autocomplete', async (req, res) => {
@@ -118,6 +104,23 @@ app.get('/api/foods/autocomplete', async (req, res) => {
     res.status(500).json({ error: err.message });
   }
 });
+
+// ─── Get food details ─────────────────────────────────────────────────────────
+// GET /api/foods/:id
+app.get('/api/foods/:id', async (req, res) => {
+  const { id } = req.params;
+  console.log(`[Proxy] Get food: ${id}`);
+  try {
+    const data = await fatSecretCall({ method: 'food.get.v4', food_id: id });
+    res.json(data);
+  } catch (err) {
+    console.error('[Proxy] Detail error:', err.message);
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// ─── Autocomplete ─────────────────────────────────────────────────────────────
+
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`[Proxy] FatSecret proxy running on port ${PORT}`));

@@ -27,7 +27,9 @@ class FatSecretNutritionService implements NutritionService {
     final base = _baseUrl;
     if (base.isEmpty) return null;
 
-    final uri = Uri.parse('$base$path').replace(queryParameters: params);
+    final uri = params.isEmpty 
+        ? Uri.parse('$base$path') 
+        : Uri.parse('$base$path').replace(queryParameters: params);
     debugPrint('[FatSecret] GET $uri');
 
     try {
@@ -151,9 +153,21 @@ class FatSecretNutritionService implements NutritionService {
         return null;
       }
 
+      String? imageUrl;
+      final foodImages = food['food_images'];
+      if (foodImages != null) {
+        final imageRaw = foodImages['food_image'];
+        if (imageRaw is List && imageRaw.isNotEmpty) {
+          imageUrl = imageRaw.first['image_url']?.toString();
+        } else if (imageRaw is Map<String, dynamic>) {
+          imageUrl = imageRaw['image_url']?.toString();
+        }
+      }
+
       debugPrint('[FatSecret] ✓ $name | cal=${serving['calories']}');
 
       return NutrientsModel(
+        imageUrl: imageUrl,
         keywords: name,
         name: name,
         calories: _s(serving['calories']),

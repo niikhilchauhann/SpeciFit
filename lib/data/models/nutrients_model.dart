@@ -36,6 +36,7 @@ class NutrientsModel {
     required this.caffeine,
     required this.servingWeight1,
     required this.servingDescription1,
+    this.imageUrl,
   });
 
   String keywords;
@@ -64,6 +65,7 @@ class NutrientsModel {
   String caffeine;
   String servingWeight1;
   String servingDescription1;
+  String? imageUrl;
 
   factory NutrientsModel.fromJson(Map<String, dynamic> json) => NutrientsModel(
     keywords: json["keywords"],
@@ -92,6 +94,7 @@ class NutrientsModel {
     caffeine: json["caffeine"],
     servingWeight1: json["servingWeight1"],
     servingDescription1: json["servingDescription1"],
+    imageUrl: json["imageUrl"],
   );
 
   Map<String, dynamic> toJson() => {
@@ -121,6 +124,7 @@ class NutrientsModel {
     "caffeine": caffeine,
     "servingWeight1": servingWeight1,
     "servingDescription1": servingDescription1,
+    "imageUrl": imageUrl,
   };
 }
 

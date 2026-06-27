@@ -17,6 +17,7 @@ import 'firebase_options.dart';
 
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import '/core/services/home_widget_service.dart';
+import '/core/services/health_service.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -32,6 +33,8 @@ void main() async {
   await Hive.openBox<Calories>('calories');
   await Hive.openBox<DailyTracker>('daily_tracker');
   await Hive.openBox<WeightTracker>('weight_tracker');
+  await Hive.openBox('autocomplete_cache');
+  await Hive.openBox('search_cache');
   runApp(const ProviderScope(child: MyApp()));
 }
 
@@ -46,6 +49,9 @@ Future<void> requestPermissions() async {
     } else {
       debugPrint('Permission denied');
     }
+    
+    // Request Health Connect permissions
+    await HealthService().requestPermissions();
   } else {
     debugPrint('Permission.activity_recognition is not supported on the web.');
   }
