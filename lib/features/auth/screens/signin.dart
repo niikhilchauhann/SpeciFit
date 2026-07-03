@@ -48,7 +48,7 @@ class _SignInPageState extends ConsumerState<SignInPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.instance.surface,
+      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       appBar: AppBar(
         toolbarHeight: 70,
         leading: IconButton(
@@ -57,7 +57,7 @@ class _SignInPageState extends ConsumerState<SignInPage> {
           },
           icon: Icon(
             Icons.arrow_back_ios_new_rounded,
-            color: AppColors.instance.onSurface,
+            color: Theme.of(context).colorScheme.onSurface,
           ),
         ),
         centerTitle: true,

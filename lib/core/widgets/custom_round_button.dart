@@ -19,6 +19,7 @@ class CustomRoundButton extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return InkWell(
+      borderRadius: BorderRadius.circular(25),
       onTap: onPressed,
       child: Container(
         padding: EdgeInsets.all(size),

@@ -49,6 +49,7 @@ class ProfileController extends Notifier<ProfileState> {
     required String goal,
     required int height,
     required int weight,
+    double? bodyFat,
     required int age,
     required String email,
     required String level,
@@ -64,6 +65,7 @@ class ProfileController extends Notifier<ProfileState> {
           goal: goal,
           height: height,
           weight: weight,
+          bodyFat: bodyFat,
           age: age,
           email: email,
           level: level,
@@ -80,6 +82,12 @@ class ProfileController extends Notifier<ProfileState> {
         weightBox.put(
           key,
           WeightTracker(date: today, weight: weight.toDouble()),
+        );
+
+        await ref.read(userProvider.notifier).addWeightTrack(
+          authUser.uid,
+          today,
+          weight.toDouble(),
         );
 
         state = state.copyWith(

@@ -1,6 +1,5 @@
 import '/core/theme/app_colors.dart';
 import 'package:awesome_dialog/awesome_dialog.dart';
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
@@ -163,10 +162,45 @@ class _WorkoutStepsState extends State<WorkoutSteps> {
                                 textAlign: TextAlign.center,
                               ),
                             ),
-                            ClipRRect(
-                              borderRadius: BorderRadius.circular(30),
-                              child: CachedNetworkImage(
-                                imageUrl: (widget.workoutList[index].gifUrl),
+                            // ClipRRect(
+                            //   borderRadius: BorderRadius.circular(30),
+                            //   child: CachedNetworkImage(
+                            //     imageUrl: (widget.workoutList[index].gifUrl),
+                            //   ),
+                            // ),
+                            Expanded(
+                              child: Padding(
+                                padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+                                child: Container(
+                                  width: double.infinity,
+                                  decoration: BoxDecoration(
+                                    color: AppColors.instance.primary.withValues(alpha: 0.05),
+                                    borderRadius: BorderRadius.circular(30),
+                                    border: Border.all(
+                                      color: AppColors.instance.primary.withValues(alpha: 0.2),
+                                      width: 2,
+                                    ),
+                                  ),
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Icon(
+                                        Icons.fitness_center_rounded,
+                                        size: 80,
+                                        color: AppColors.instance.primary.withValues(alpha: 0.5),
+                                      ),
+                                      const SizedBox(height: 20),
+                                      Text(
+                                        "Focus on your form!",
+                                        style: TextStyle(
+                                          color: AppColors.instance.primary.withValues(alpha: 0.7),
+                                          fontSize: 18,
+                                          fontWeight: FontWeight.w600,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
                               ),
                             ),
                             Text(

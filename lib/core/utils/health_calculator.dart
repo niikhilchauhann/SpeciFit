@@ -2,10 +2,17 @@ import '/data/models/users_model.dart';
 
 class HealthCalculator {
   static double calculateBMR(Users user, double weight) {
-    if (user.gender.toLowerCase() == 'male') {
-      return 10 * weight + 6.25 * user.height - 5 * user.age + 5;
+    if (user.bodyFat != null && user.bodyFat! > 0) {
+      // Katch-McArdle Formula
+      double lbm = weight * (1 - user.bodyFat! / 100);
+      return 370 + (21.6 * lbm);
     } else {
-      return 10 * weight + 6.25 * user.height - 5 * user.age - 161;
+      // Mifflin-St Jeor equation
+      if (user.gender.toLowerCase() == 'male') {
+        return 10 * weight + 6.25 * user.height - 5 * user.age + 5;
+      } else {
+        return 10 * weight + 6.25 * user.height - 5 * user.age - 161;
+      }
     }
   }
 
@@ -30,9 +37,9 @@ class HealthCalculator {
     final baseGoal = goal.toLowerCase().split(' ').first;
     switch (baseGoal) {
       case 'lose':
-        return tdee - 500;
+        return tdee - 400;
       case 'gain':
-        return tdee + 500;
+        return tdee + 300;
       case 'maintain':
       default:
         return tdee;

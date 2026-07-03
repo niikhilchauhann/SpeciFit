@@ -50,8 +50,8 @@ class HealthService {
   }
 
   Future<double> getSleepHours(DateTime date) async {
-    DateTime start = DateTime(date.year, date.month, date.day);
-    DateTime end = DateTime(date.year, date.month, date.day, 23, 59, 59);
+    DateTime start = DateTime(date.year, date.month, date.day).subtract(const Duration(hours: 6));
+    DateTime end = DateTime(date.year, date.month, date.day, 18, 0, 0);
     try {
       List<HealthDataType> sleepTypes = Platform.isAndroid
           ? [HealthDataType.SLEEP_ASLEEP, HealthDataType.SLEEP_SESSION]
@@ -63,14 +63,19 @@ class HealthService {
         endTime: end,
       );
 
-      double totalSleepInMinutes = 0;
+      double asleepMinutes = 0;
+      double sessionMinutes = 0;
+      double inBedMinutes = 0;
+
       for (var point in sleepData) {
-        totalSleepInMinutes += point.dateTo
-            .difference(point.dateFrom)
-            .inMinutes;
+        final minutes = point.dateTo.difference(point.dateFrom).inMinutes.toDouble();
+        if (point.type == HealthDataType.SLEEP_ASLEEP) asleepMinutes += minutes;
+        if (point.type == HealthDataType.SLEEP_SESSION) sessionMinutes += minutes;
+        if (point.type == HealthDataType.SLEEP_IN_BED) inBedMinutes += minutes;
       }
 
-      return totalSleepInMinutes / 60.0;
+      double totalMinutes = asleepMinutes > 0 ? asleepMinutes : (sessionMinutes > 0 ? sessionMinutes : inBedMinutes);
+      return totalMinutes / 60.0;
     } catch (e) {
       debugPrint('Exception in getSleepHours: $e');
       return 0;

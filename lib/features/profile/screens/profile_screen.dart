@@ -1,9 +1,12 @@
+import 'package:specifit/core/providers/auth_provider.dart';
+
 import '/core/utils/exports.dart';
 import '/features/auth/screens/message_dialogs.dart';
 import '/core/providers/user_provider.dart';
 import '/core/providers/profile_controller.dart';
 import '/core/widgets/custom_text_field.dart';
 import '/core/widgets/custom_dropdown.dart';
+import 'privacy_policy_screen.dart';
 
 class ProfileScreen extends ConsumerStatefulWidget {
   const ProfileScreen({super.key});
@@ -18,6 +21,7 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
   final TextEditingController _nameController = TextEditingController();
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _weightController = TextEditingController();
+  final TextEditingController _bodyFatController = TextEditingController();
   final TextEditingController _feetController = TextEditingController();
   final TextEditingController _inchesController = TextEditingController();
 
@@ -44,6 +48,7 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
     _nameController.dispose();
     _emailController.dispose();
     _weightController.dispose();
+    _bodyFatController.dispose();
     _feetController.dispose();
     _inchesController.dispose();
     super.dispose();
@@ -54,6 +59,7 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
       _nameController.text = userData.firstname;
       _emailController.text = userData.email;
       _weightController.text = userData.weight.toString();
+      _bodyFatController.text = userData.bodyFat?.toString() ?? '';
 
       _gender.value = userData.gender;
       if (!_genders.contains(_gender.value)) _gender.value = _genders.first;
@@ -77,7 +83,7 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
       int inches = (totalInches % 12).round();
       _feetController.text = feet.toString();
       _inchesController.text = inches.toString();
-      
+
       _initialized = true;
     }
   }
@@ -89,17 +95,20 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
     double totalInches = ((feet * 12) + inches).toDouble();
     int heightInCm = (totalInches * 2.54).round();
 
-    ref.read(profileControllerProvider.notifier).saveUserData(
-      firstname: _nameController.text.trim(),
-      gender: _gender.value,
-      goal: _goal.value,
-      height: heightInCm,
-      weight: int.tryParse(_weightController.text) ?? 0,
-      age: _age.value,
-      email: _emailController.text,
-      level: _level.value,
-      lifestyle: _lifestyle.value,
-    );
+    ref
+        .read(profileControllerProvider.notifier)
+        .saveUserData(
+          firstname: _nameController.text.trim(),
+          gender: _gender.value,
+          goal: _goal.value,
+          height: heightInCm,
+          weight: int.tryParse(_weightController.text) ?? 0,
+          bodyFat: double.tryParse(_bodyFatController.text),
+          age: _age.value,
+          email: _emailController.text,
+          level: _level.value,
+          lifestyle: _lifestyle.value,
+        );
   }
 
   @override
@@ -107,7 +116,7 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
     final theme = Theme.of(context);
     final userData = ref.watch(userProvider);
     final profileState = ref.watch(profileControllerProvider);
-    
+
     // Initialize data once
     if (!_initialized && userData != null) {
       _initUserData(userData);
@@ -170,7 +179,9 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
                     ),
                   ),
                   TextButton(
-                    onPressed: () => ref.read(profileControllerProvider.notifier).resetPassword(_emailController.text),
+                    onPressed: () => ref
+                        .read(profileControllerProvider.notifier)
+                        .resetPassword(_emailController.text),
                     child: Text(
                       "Forget Password? Send Reset Email",
                       style: TextStyle(
@@ -188,6 +199,14 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
                     child: CustomTextField(
                       label: "Weight (kg)",
                       controller: _weightController,
+                      keyboardType: TextInputType.number,
+                    ),
+                  ),
+                  const SizedBox(width: 16),
+                  Expanded(
+                    child: CustomTextField(
+                      label: "Body Fat (%)",
+                      controller: _bodyFatController,
                       keyboardType: TextInputType.number,
                     ),
                   ),
@@ -296,10 +315,62 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
                       ? const CircularProgressIndicator(color: Colors.white)
                       : Text(
                           "Update Profile",
-                          style: AppTextStyles.instance.titleLarge.copyWith(
+                          style: AppTextStyles.instance.title.copyWith(
                             color: Colors.white,
                           ),
                         ),
+                ),
+              ),
+              const SizedBox(height: 20),
+              SizedBox(
+                width: double.infinity,
+                height: 55,
+                child: OutlinedButton(
+                  style: OutlinedButton.styleFrom(
+                    side: BorderSide(
+                      color: AppColors.instance.primary,
+                      width: 1.5,
+                    ),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(16),
+                    ),
+                  ),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const PrivacyPolicyScreen(),
+                      ),
+                    );
+                  },
+                  child: Text(
+                    "Privacy Policy",
+                    style: AppTextStyles.instance.title.copyWith(
+                      color: AppColors.instance.primary,
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 20),
+              SizedBox(
+                width: double.infinity,
+                height: 55,
+                child: OutlinedButton(
+                  style: OutlinedButton.styleFrom(
+                    side: BorderSide(color: Colors.red, width: 1.5),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(16),
+                    ),
+                  ),
+                  onPressed: () async {
+                    await ref.read(authProvider.notifier).signOut();
+                  },
+                  child: Text(
+                    "Sign Out",
+                    style: AppTextStyles.instance.title.copyWith(
+                      color: Colors.red,
+                    ),
+                  ),
                 ),
               ),
               const SizedBox(height: 40),

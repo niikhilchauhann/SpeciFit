@@ -1,4 +1,4 @@
-import '/core/theme/app_colors.dart';
+
 import 'package:flutter/material.dart';
 
 import '/features/auth/screens/custom_stepper.dart';
@@ -45,7 +45,7 @@ class _AuthSwitchState extends State<AuthSwitch>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.instance.surface,
+      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       body: FadeTransition(
         opacity: _animation,
         child: ValueListenableBuilder<bool>(

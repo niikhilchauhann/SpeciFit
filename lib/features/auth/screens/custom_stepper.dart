@@ -19,6 +19,8 @@ class _CustomStepperState extends ConsumerState<CustomStepper> {
   final feetController = TextEditingController();
   final inchesController = TextEditingController();
   final weightController = TextEditingController();
+  final bodyFatController = TextEditingController();
+  final ValueNotifier<bool> dontKnowBodyFat = ValueNotifier(false);
   final _formKey = GlobalKey<FormState>();
   final _nameKey = GlobalKey<FormState>();
   final _heightKey = GlobalKey<FormState>();
@@ -48,6 +50,8 @@ class _CustomStepperState extends ConsumerState<CustomStepper> {
     feetController.dispose();
     inchesController.dispose();
     weightController.dispose();
+    bodyFatController.dispose();
+    dontKnowBodyFat.dispose();
     _email.dispose();
     _password.dispose();
     _processStarted.dispose();
@@ -164,6 +168,9 @@ class _CustomStepperState extends ConsumerState<CustomStepper> {
           gender: selectedGender.value,
           height: _heightInCm.value,
           weight: int.parse(weightController.text),
+          bodyFat: dontKnowBodyFat.value
+              ? null
+              : double.tryParse(bodyFatController.text),
           age: _age.value,
           goal: selectedGoal.value,
           level: selectedLevel.value,
@@ -481,10 +488,10 @@ class _CustomStepperState extends ConsumerState<CustomStepper> {
         key: _weightKey,
         child: Column(
           children: [
-            TitleWidget(title: "What is your weight?"),
-            SizedBox(height: 50),
+            TitleWidget(title: "Weight & Body Fat"),
+            SizedBox(height: 30),
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: 100),
+              padding: EdgeInsets.symmetric(horizontal: 50),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
@@ -510,6 +517,8 @@ class _CustomStepperState extends ConsumerState<CustomStepper> {
                         return null;
                       },
                       decoration: InputDecoration(
+                        hintText: "Weight",
+                        hintStyle: TextStyle(fontSize: 16),
                         border: UnderlineInputBorder(
                           borderSide: BorderSide(color: Colors.grey.shade300),
                         ),
@@ -530,6 +539,118 @@ class _CustomStepperState extends ConsumerState<CustomStepper> {
                       color: Colors.grey.shade600,
                     ),
                   ),
+                  SizedBox(width: 20),
+                  Expanded(
+                    child: ValueListenableBuilder<bool>(
+                      valueListenable: dontKnowBodyFat,
+                      builder: (context, dontKnow, _) {
+                        return TextFormField(
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontSize: 34,
+                            fontFamily: "Poppins",
+                            color: dontKnow
+                                ? Colors.grey
+                                : AppColors.instance.primary,
+                            fontWeight: FontWeight.bold,
+                          ),
+                          controller: bodyFatController,
+                          textInputAction: TextInputAction.next,
+                          keyboardType: TextInputType.number,
+                          enabled: !dontKnow,
+                          validator: (value) {
+                            if (dontKnow) return null;
+                            if (value == null || value.isEmpty) {
+                              return 'Req';
+                            }
+                            return null;
+                          },
+                          decoration: InputDecoration(
+                            hintText: "Body Fat",
+                            hintStyle: TextStyle(fontSize: 16),
+                            border: UnderlineInputBorder(
+                              borderSide: BorderSide(
+                                color: Colors.grey.shade300,
+                              ),
+                            ),
+                            focusedBorder: UnderlineInputBorder(
+                              borderSide: BorderSide(
+                                color: AppColors.instance.primary,
+                              ),
+                            ),
+                          ),
+                        );
+                      },
+                    ),
+                  ),
+                  SizedBox(width: 8),
+                  Text(
+                    "%",
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontFamily: "Poppins",
+                      color: Colors.grey.shade600,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(height: 10),
+            ValueListenableBuilder<bool>(
+              valueListenable: dontKnowBodyFat,
+              builder: (context, dontKnow, _) {
+                return Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Checkbox(
+                      value: dontKnow,
+                      onChanged: (val) {
+                        dontKnowBodyFat.value = val ?? false;
+                        if (val == true) {
+                          bodyFatController.clear();
+                        }
+                      },
+                      activeColor: AppColors.instance.primary,
+                    ),
+                    Text(
+                      "I don't know my fat percentage",
+                      style: TextStyle(
+                        fontFamily: "Poppins",
+                        color: Colors.grey.shade700,
+                      ),
+                    ),
+                  ],
+                );
+              },
+            ),
+            SizedBox(height: 36),
+            Expanded(
+              child: Column(
+                children: [
+                  Text(
+                    "Note: We use the Mifflin-St Jeor equation by default. If you provide body fat, we use the Katch-McArdle Formula for better precision.",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(fontSize: 12, color: Colors.grey),
+                  ),
+                  SizedBox(height: 24),
+                  Expanded(
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(20),
+                      child: ValueListenableBuilder<String>(
+                        valueListenable: selectedGender,
+                        builder: (context, gender, _) {
+                          String imagePath = gender.toLowerCase() == 'female'
+                              ? 'assets/images/female_fat_chart.jpeg'
+                              : 'assets/images/male_fat_chart.jpg';
+                          return Image.asset(
+                            imagePath,
+                            fit: BoxFit.contain,
+                            alignment: Alignment.topCenter,
+                          );
+                        },
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ),
@@ -543,11 +664,11 @@ class _CustomStepperState extends ConsumerState<CustomStepper> {
           Container(
             height: 160,
             decoration: BoxDecoration(
-              color: Colors.white,
+              color: Theme.of(context).colorScheme.surface,
               borderRadius: BorderRadius.circular(15),
               boxShadow: [
                 BoxShadow(
-                  color: Colors.black.withValues(alpha: 0.05),
+                  color: Theme.of(context).brightness == Brightness.dark ? Colors.white.withValues(alpha: 0.05) : Colors.black.withValues(alpha: 0.05),
                   blurRadius: 10,
                   offset: Offset(0, 4),
                 ),
@@ -773,7 +894,7 @@ class _CustomStepperState extends ConsumerState<CustomStepper> {
     return Theme(
       data: ThemeData(primarySwatch: Colors.blue), // Will be overridden
       child: Scaffold(
-        backgroundColor: AppColors.instance.surface,
+        backgroundColor: Theme.of(context).colorScheme.surface,
         body: SafeArea(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -897,7 +1018,7 @@ class _CustomStepperState extends ConsumerState<CustomStepper> {
                                       child: RepaintBoundary(
                                         child: CircularProgressIndicator(
                                           strokeWidth: 3,
-                                          color: Colors.white,
+                                          color: Theme.of(context).colorScheme.surface,
                                         ),
                                       ),
                                     )
@@ -905,7 +1026,7 @@ class _CustomStepperState extends ConsumerState<CustomStepper> {
                                       "Create Account",
                                       textAlign: TextAlign.center,
                                       style: TextStyle(
-                                        color: Colors.white,
+                                        color: Theme.of(context).colorScheme.surface,
                                         fontSize: 18,
                                         fontWeight: FontWeight.bold,
                                       ),
@@ -947,7 +1068,7 @@ class _CustomStepperState extends ConsumerState<CustomStepper> {
                           "Continue",
                           textAlign: TextAlign.center,
                           style: TextStyle(
-                            color: Colors.white,
+                            color: Theme.of(context).colorScheme.surface,
                             fontSize: 18,
                             fontWeight: FontWeight.bold,
                           ),
@@ -1013,7 +1134,7 @@ class LifestyleWidget extends StatelessWidget {
             decoration: BoxDecoration(
               color: isSelected
                   ? AppColors.instance.primary.withValues(alpha: 0.1)
-                  : AppColors.instance.surface,
+                  : Theme.of(context).colorScheme.surface,
               border: Border.all(
                 color: isSelected
                     ? AppColors.instance.primary
@@ -1033,7 +1154,7 @@ class LifestyleWidget extends StatelessWidget {
                     ]
                   : [
                       BoxShadow(
-                        color: Colors.black.withValues(alpha: 0.05),
+                        color: Theme.of(context).brightness == Brightness.dark ? Colors.white.withValues(alpha: 0.05) : Colors.black.withValues(alpha: 0.05),
                         blurRadius: 4,
                         offset: Offset(0, 2),
                       ),
@@ -1048,7 +1169,7 @@ class LifestyleWidget extends StatelessWidget {
                   style: AppTextStyles.instance.titleSmall.copyWith(
                     color: isSelected
                         ? AppColors.instance.primary
-                        : Colors.black87,
+                        : Theme.of(context).colorScheme.onSurface,
                     fontWeight: isSelected ? FontWeight.bold : FontWeight.w600,
                     fontSize: 15,
                   ),
@@ -1101,7 +1222,7 @@ class AboutYouOne extends StatelessWidget {
             decoration: BoxDecoration(
               color: isSelected
                   ? AppColors.instance.primary.withValues(alpha: 0.1)
-                  : AppColors.instance.surface,
+                  : Theme.of(context).colorScheme.surface,
               border: Border.all(
                 color: isSelected
                     ? AppColors.instance.primary
@@ -1120,7 +1241,7 @@ class AboutYouOne extends StatelessWidget {
                     ]
                   : [
                       BoxShadow(
-                        color: Colors.black.withValues(alpha: 0.05),
+                        color: Theme.of(context).brightness == Brightness.dark ? Colors.white.withValues(alpha: 0.05) : Colors.black.withValues(alpha: 0.05),
                         blurRadius: 4,
                         offset: Offset(0, 2),
                       ),
@@ -1145,7 +1266,7 @@ class AboutYouOne extends StatelessWidget {
                     style: AppTextStyles.instance.titleSmall.copyWith(
                       color: isSelected
                           ? AppColors.instance.primary
-                          : Colors.black87,
+                          : Theme.of(context).colorScheme.onSurface,
                       fontWeight: isSelected
                           ? FontWeight.bold
                           : FontWeight.w600,
@@ -1193,7 +1314,7 @@ class AboutYouTwo extends StatelessWidget {
             decoration: BoxDecoration(
               color: isSelected
                   ? AppColors.instance.primary.withValues(alpha: 0.1)
-                  : AppColors.instance.surface,
+                  : Theme.of(context).colorScheme.surface,
               border: Border.all(
                 color: isSelected
                     ? AppColors.instance.primary
@@ -1212,7 +1333,7 @@ class AboutYouTwo extends StatelessWidget {
                     ]
                   : [
                       BoxShadow(
-                        color: Colors.black.withValues(alpha: 0.05),
+                        color: Theme.of(context).brightness == Brightness.dark ? Colors.white.withValues(alpha: 0.05) : Colors.black.withValues(alpha: 0.05),
                         blurRadius: 4,
                         offset: Offset(0, 2),
                       ),
@@ -1241,7 +1362,7 @@ class AboutYouTwo extends StatelessWidget {
                         style: AppTextStyles.instance.titleSmall.copyWith(
                           color: isSelected
                               ? AppColors.instance.primary
-                              : Colors.black87,
+                              : Theme.of(context).colorScheme.onSurface,
                           fontWeight: isSelected
                               ? FontWeight.bold
                               : FontWeight.w600,

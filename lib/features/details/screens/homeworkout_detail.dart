@@ -1,4 +1,4 @@
-import 'package:cached_network_image/cached_network_image.dart';
+import 'dart:async';
 import 'package:flutter/material.dart';
 
 class ExerciseDetails extends StatelessWidget {
@@ -106,12 +106,71 @@ class ExerciseDetails extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 16),
-            ClipRRect(
-              borderRadius: BorderRadius.circular(8),
-              child: CachedNetworkImage(imageUrl: gifUrl, fit: BoxFit.cover),
+            // ClipRRect(
+            //   borderRadius: BorderRadius.circular(8),
+            //   child: CachedNetworkImage(imageUrl: gifUrl, fit: BoxFit.cover),
+            // ),
+            Expanded(
+              child: Center(
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(16),
+                  child: WgerImageAnimator(imageUrls: gifUrl.split(',')),
+                ),
+              ),
             ),
           ],
         ),
+      ),
+    );
+  }
+}
+
+class WgerImageAnimator extends StatefulWidget {
+  final List<String> imageUrls;
+  const WgerImageAnimator({super.key, required this.imageUrls});
+
+  @override
+  State<WgerImageAnimator> createState() => _WgerImageAnimatorState();
+}
+
+class _WgerImageAnimatorState extends State<WgerImageAnimator> {
+  int _currentIndex = 0;
+  Timer? _timer;
+
+  @override
+  void initState() {
+    super.initState();
+    if (widget.imageUrls.length > 1) {
+      _timer = Timer.periodic(const Duration(milliseconds: 1000), (timer) {
+        if (mounted) {
+          setState(() {
+            _currentIndex = (_currentIndex + 1) % widget.imageUrls.length;
+          });
+        }
+      });
+    }
+  }
+
+  @override
+  void dispose() {
+    _timer?.cancel();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    if (widget.imageUrls.isEmpty) return const SizedBox.shrink();
+    return AnimatedSwitcher(
+      duration: const Duration(milliseconds: 300),
+      child: Image.network(
+        widget.imageUrls[_currentIndex],
+        key: ValueKey<String>(widget.imageUrls[_currentIndex]),
+        fit: BoxFit.cover,
+        loadingBuilder: (context, child, loadingProgress) {
+          if (loadingProgress == null) return child;
+          return const Center(child: CircularProgressIndicator());
+        },
+        errorBuilder: (context, error, stackTrace) => const Center(child: Icon(Icons.error, size: 50)),
       ),
     );
   }

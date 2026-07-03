@@ -5,6 +5,7 @@ class Users {
   final String gender;
   final int height;
   final int weight;
+  final double? bodyFat;
   final int age;
   final String email;
   final String goal;
@@ -17,6 +18,7 @@ class Users {
     required this.goal,
     required this.height,
     required this.weight,
+    this.bodyFat,
     required this.age,
     required this.email,
     required this.level,
@@ -37,6 +39,9 @@ class Users {
       weight: (data?['weight'] is num)
           ? (data!['weight'] as num).toInt()
           : int.tryParse(data?['weight']?.toString() ?? '0') ?? 0,
+      bodyFat: (data?['bodyFat'] is num)
+          ? (data!['bodyFat'] as num).toDouble()
+          : double.tryParse(data?['bodyFat']?.toString() ?? ''),
       age: (data?['age'] is num)
           ? (data!['age'] as num).toInt()
           : int.tryParse(data?['age']?.toString() ?? '0') ?? 0,
@@ -54,6 +59,7 @@ class Users {
       "goal": goal,
       "height": height,
       "weight": weight,
+      "bodyFat": bodyFat,
       "age": age,
       "level": level,
       "lifestyle": lifestyle,

@@ -1,4 +1,3 @@
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 class ExerciseDetails extends StatelessWidget {
@@ -106,9 +105,27 @@ class ExerciseDetails extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 16),
-            ClipRRect(
-              borderRadius: BorderRadius.circular(8),
-              child: CachedNetworkImage(imageUrl: gifUrl, fit: BoxFit.cover),
+            // ClipRRect(
+            //   borderRadius: BorderRadius.circular(8),
+            //   child: CachedNetworkImage(imageUrl: gifUrl, fit: BoxFit.cover),
+            // ),
+            Expanded(
+              child: Center(
+                child: Container(
+                  padding: const EdgeInsets.all(40),
+                  decoration: BoxDecoration(
+                    color: Theme.of(
+                      context,
+                    ).colorScheme.primary.withValues(alpha: 0.1),
+                    shape: BoxShape.circle,
+                  ),
+                  child: Icon(
+                    Icons.sports_gymnastics_rounded,
+                    size: 80,
+                    color: Theme.of(context).colorScheme.primary,
+                  ),
+                ),
+              ),
             ),
           ],
         ),

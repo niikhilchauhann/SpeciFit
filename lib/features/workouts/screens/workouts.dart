@@ -8,10 +8,7 @@ import '/data/models/exercise_model.dart';
 import '/features/tracker/screens/workout_tracker.dart';
 
 import '/core/widgets/custom_route.dart';
-import '/features/workouts/screens/workout_level.dart';
-import '/features/workouts/screens/workouts_widgets/man_workouts.dart';
 import '/features/workouts/screens/workouts_widgets/startworkout.dart';
-import '/features/workouts/screens/workouts_widgets/woman_workouts.dart';
 
 class Workouts extends ConsumerStatefulWidget {
   const Workouts({super.key});
@@ -247,49 +244,7 @@ class _WorkoutsState extends ConsumerState<Workouts> {
                                   : absExercises2,
                             ),
                             const SizedBox(height: 5),
-                            gender == 'Male'
-                                ? WorkoutLvlTilesM(
-                                    ontap: () => Navigator.push(
-                                      context,
-                                      createRoute(
-                                        ManWorkouts(
-                                          chest: workoutState.chest,
-                                          back: workoutState.back,
-                                          arms: workoutState.arms,
-                                          abs: workoutState.abs,
-                                          shoulders: workoutState.shoulders,
-                                          legs: workoutState.legs,
-                                        ),
-                                      ),
-                                    ),
-                                    levelname: level == 'Beginner'
-                                        ? "BEGINNER: GYM"
-                                        : level == 'Intermediate'
-                                        ? "INTERMEDIATE: GYM"
-                                        : "ADVANCED: GYM",
-                                    level: "⭐",
-                                  )
-                                : WorkoutLvlTilesW(
-                                    ontap: () => Navigator.push(
-                                      context,
-                                      createRoute(
-                                        WomanWorkouts(
-                                          chest: workoutState.chest,
-                                          back: workoutState.back,
-                                          arms: workoutState.arms,
-                                          abs: workoutState.abs,
-                                          shoulders: workoutState.shoulders,
-                                          legs: workoutState.legs,
-                                        ),
-                                      ),
-                                    ),
-                                    levelname: level == 'Beginner'
-                                        ? "BEGINNER: GYM"
-                                        : level == 'Intermediate'
-                                        ? "INTERMEDIATE: GYM"
-                                        : "ADVANCED: GYM",
-                                    level: "⭐",
-                                  ),
+                            
                             const SizedBox(height: 10),
                           ],
                         );
@@ -319,7 +274,7 @@ class WorkoutCategory extends StatelessWidget {
         height: 260,
         width: MediaQuery.of(context).size.width,
         decoration: BoxDecoration(
-          color: AppColors.instance.surface,
+          color: Theme.of(context).cardColor,
           boxShadow: [
             BoxShadow(
               color: const Color(0xFF3A5160).withValues(alpha: 0.2),

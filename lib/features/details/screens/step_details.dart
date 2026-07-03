@@ -2,8 +2,10 @@ import '/core/utils/exports.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
 import 'package:awesome_dialog/awesome_dialog.dart';
 import 'package:percent_indicator/percent_indicator.dart';
+import 'package:easy_date_timeline/easy_date_timeline.dart';
 
-import '/utils/step_count/step_count.dart';
+import '/core/providers/theme_provider.dart';
+import '/core/providers/health_data_provider.dart';
 
 class StepsDetails extends ConsumerStatefulWidget {
   const StepsDetails({super.key});
@@ -13,23 +15,24 @@ class StepsDetails extends ConsumerStatefulWidget {
 }
 
 class _StepsDetailsState extends ConsumerState<StepsDetails> {
-  final ValueNotifier<int> _updateState = ValueNotifier(0);
+  final ValueNotifier<DateTime> _selectedDateNotifier = ValueNotifier<DateTime>(DateTime.now());
+
+  @override
+  void dispose() {
+    _selectedDateNotifier.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
-    final stepState = ref.watch(stepCountProvider);
-    dynamic yourSteps = stepState.stepCount;
-    if (stepState.pedestrianStatus == 'unavailable') {
-      yourSteps == 1;
-      _updateState.value++;
-    } else {
-      yourSteps == stepState.stepCount;
-      _updateState.value++;
-    }
+    bool isDark = ref.watch(themeProvider);
     var theme = Theme.of(context).textTheme;
-    return ValueListenableBuilder(
-      valueListenable: _updateState,
-      builder: (context, _, __) {
+
+    return ValueListenableBuilder<DateTime>(
+      valueListenable: _selectedDateNotifier,
+      builder: (context, selectedDate, _) {
+        final healthDataAsync = ref.watch(healthDataProvider(selectedDate));
+
         return Scaffold(
           appBar: AppBar(
             centerTitle: true,
@@ -63,29 +66,19 @@ class _StepsDetailsState extends ConsumerState<StepsDetails> {
                           Text("Points to remember:", style: theme.labelLarge),
                           const SizedBox(height: 15),
                           Text(
-                            "A) This step count is based on an average human's height or stride length. It may not be accurate for everyone.",
+                            "A) Step data is synchronized directly from Health Connect (Android) or Apple Health (iOS).",
                             style: theme.labelLarge,
                           ),
                           const SizedBox(height: 10),
                           Text(
-                            "B) We have disabled our app to run automatically in AppColors.instance.background to count steps as it will drain battery faster.",
-                            style: theme.labelLarge,
-                          ),
-                          const SizedBox(height: 10),
-                          Text(
-                            "C) If you want to count steps even when app is not running, you will have to open app once and leave it in the AppColors.instance.background.",
-                            style: theme.labelLarge,
-                          ),
-                          const SizedBox(height: 10),
-                          Text(
-                            "D) If you want an feature to count steps even when app is terminated, email us using the in-app feedback feature or at isedenlive@gmail.com",
+                            "B) Make sure your smartwatch or tracking device is actively syncing step data to your device's health platform.",
                             style: theme.labelLarge,
                           ),
                           const SizedBox(height: 10),
                         ],
                       ),
                       btnOkOnPress: () {},
-                      btnOkText: "OKAY",
+                      btnOkText: "GOT IT",
                     ).show();
                   },
                   icon: const Icon(CupertinoIcons.question_circle, size: 24),
@@ -98,121 +91,183 @@ class _StepsDetailsState extends ConsumerState<StepsDetails> {
             padding: const EdgeInsets.symmetric(horizontal: 20),
             children: [
               const SizedBox(height: 10),
-              Text(
-                "You Have To Take\nMore Steps!",
-                style: theme.headlineSmall,
-                textAlign: TextAlign.center,
-              ),
-              Padding(
-                padding: const EdgeInsets.only(top: 30),
-                child: Stack(
-                  alignment: Alignment.center,
-                  children: [
-                    Container(
-                      height: 170,
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        border: Border.all(
-                          color: Colors.orange.withValues(alpha: 0.3),
-                        ),
-                      ),
+              EasyDateTimeLine(
+                initialDate: selectedDate,
+                onDateChange: (newDate) {
+                  _selectedDateNotifier.value = newDate;
+                },
+                headerProps: EasyHeaderProps(
+                  monthPickerType: MonthPickerType.switcher,
+                  dateFormatter: const DateFormatter.fullDateDMY(),
+                  monthStyle: TextStyle(
+                    color: isDark ? Colors.white : Colors.black87,
+                    fontWeight: FontWeight.bold,
+                  ),
+                  selectedDateStyle: TextStyle(
+                    color: isDark ? Colors.white : Colors.black87,
+                  ),
+                ),
+                dayProps: EasyDayProps(
+                  dayStructure: DayStructure.dayStrDayNum,
+                  activeDayStyle: DayStyle(
+                    dayNumStyle: const TextStyle(
+                      color: Colors.white,
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold,
                     ),
-                    CircularPercentIndicator(
-                      percent: stepState.stepCount < 10000
-                          ? stepState.stepCount.toDouble() / 10000
-                          : 1,
-                      circularStrokeCap: CircularStrokeCap.round,
-                      progressColor: Colors.orange.withValues(alpha: 0.5),
-                      backgroundColor: Colors.orange.withValues(alpha: 0.2),
-                      backgroundWidth: -1,
-                      radius: 115,
-                      lineWidth: 15,
-                      center: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Icon(
-                            stepState.pedestrianStatus == 'walking'
-                                ? Icons.directions_run_rounded
-                                : stepState.pedestrianStatus == 'stopped'
-                                ? Icons.accessibility_new_rounded
-                                : Icons.accessibility_new_rounded,
-                            size: 30,
-                            color: Colors.orange,
-                          ),
-                          Text(
-                            (yourSteps).toString(),
-                            style: const TextStyle(
-                              fontSize: 45,
-                              fontWeight: FontWeight.w600,
-                              color: Colors.orange,
-                            ),
-                          ),
-                          Text("STEPS", style: theme.titleMedium),
-                        ],
-                      ),
+                    dayStrStyle: const TextStyle(color: Colors.white, fontSize: 12),
+                    decoration: BoxDecoration(
+                      borderRadius: const BorderRadius.all(Radius.circular(8)),
+                      color: AppColors.instance.primary,
                     ),
-                  ],
+                  ),
+                  inactiveDayStyle: DayStyle(
+                    dayNumStyle: TextStyle(
+                      color: isDark ? Colors.white70 : Colors.black87,
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                    ),
+                    dayStrStyle: TextStyle(
+                      color: isDark ? Colors.white54 : Colors.black54,
+                      fontSize: 12,
+                    ),
+                  ),
                 ),
               ),
-              const SizedBox(height: 30),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  ActivityStats(
-                    icon: CupertinoIcons.flame,
-                    value: ((yourSteps) * 0.05).toStringAsFixed(1) + " kcal",
-                    iconColor: Colors.purple,
+              const SizedBox(height: 24),
+              healthDataAsync.when(
+                loading: () => const Center(
+                  child: Padding(
+                    padding: EdgeInsets.all(40.0),
+                    child: CircularProgressIndicator(),
                   ),
-                  ActivityStats(
-                    icon: Icons.watch_later_outlined,
-                    value: ((yourSteps) * 0.015).toStringAsFixed(1) + " min",
-                    iconColor: Colors.green,
+                ),
+                error: (err, stack) => const Center(
+                  child: Padding(
+                    padding: EdgeInsets.all(40.0),
+                    child: Text('Error loading step data'),
                   ),
-                  ActivityStats(
-                    icon: Icons.location_on,
-                    value:
-                        (((yourSteps) * 2.4) / 3281).toStringAsFixed(2) + " km",
-                    iconColor: Colors.orange,
-                  ),
-                ],
-              ),
-              const SizedBox(height: 30),
-              Text('Achievements', style: AppTextStyles.instance.titleLarge),
-              const SizedBox(height: 16),
-              AchievementsWidget(
-                title: 'BEGINNER',
-                value: '500',
-                isComplete: yourSteps > 500 ? true : false,
-              ),
-              AchievementsWidget(
-                title: 'MR. NOBODY',
-                value: '1000',
-                isComplete: yourSteps > 1000 ? true : false,
-              ),
-              AchievementsWidget(
-                title: 'THE HEALTH CONCIOUS',
-                value: '10k',
-                isComplete: yourSteps > 10000 ? true : false,
-              ),
-              AchievementsWidget(
-                title: 'ATHLETE',
-                value: '20k',
-                isComplete: yourSteps > 20000 ? true : false,
-              ),
-              AchievementsWidget(
-                title: 'ELITE RUNNER',
-                value: '50k',
-                isComplete: yourSteps > 50000 ? true : false,
-              ),
-              AchievementsWidget(
-                title: 'MASTER',
-                value: '75k',
-                isComplete: yourSteps > 75000 ? true : false,
-              ),
-              AchievementsWidget(
-                title: 'THE CONQUERER',
-                value: '100k',
-                isComplete: yourSteps > 100000 ? true : false,
+                ),
+                data: (healthData) {
+                  int yourSteps = healthData.steps;
+
+                  return Column(
+                    children: [
+                      Text(
+                        yourSteps >= 10000
+                            ? "Great Job Today!"
+                            : "You Have To Take\nMore Steps!",
+                        style: theme.headlineSmall,
+                        textAlign: TextAlign.center,
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 30),
+                        child: Stack(
+                          alignment: Alignment.center,
+                          children: [
+                            Container(
+                              height: 170,
+                              decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                border: Border.all(
+                                  color: Colors.orange.withValues(alpha: 0.3),
+                                ),
+                              ),
+                            ),
+                            CircularPercentIndicator(
+                              percent: yourSteps < 10000 ? yourSteps.toDouble() / 10000 : 1.0,
+                              circularStrokeCap: CircularStrokeCap.round,
+                              progressColor: Colors.orange.withValues(alpha: 0.5),
+                              backgroundColor: Colors.orange.withValues(alpha: 0.2),
+                              backgroundWidth: -1,
+                              radius: 115,
+                              lineWidth: 15,
+                              center: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  const Icon(
+                                    Icons.directions_run_rounded,
+                                    size: 30,
+                                    color: Colors.orange,
+                                  ),
+                                  Text(
+                                    yourSteps.toString(),
+                                    style: const TextStyle(
+                                      fontSize: 45,
+                                      fontWeight: FontWeight.w600,
+                                      color: Colors.orange,
+                                    ),
+                                  ),
+                                  Text("STEPS", style: theme.titleMedium),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      const SizedBox(height: 30),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          ActivityStats(
+                            icon: CupertinoIcons.flame,
+                            value: "${(yourSteps * 0.05).toStringAsFixed(1)} kcal",
+                            iconColor: Colors.purple,
+                          ),
+                          ActivityStats(
+                            icon: Icons.watch_later_outlined,
+                            value: "${(yourSteps * 0.015).toStringAsFixed(1)} min",
+                            iconColor: Colors.green,
+                          ),
+                          ActivityStats(
+                            icon: Icons.location_on,
+                            value: "${((yourSteps * 2.4) / 3281).toStringAsFixed(2)} km",
+                            iconColor: Colors.orange,
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: 30),
+                      Text('Achievements', style: AppTextStyles.instance.titleLarge),
+                      const SizedBox(height: 16),
+                      AchievementsWidget(
+                        title: 'BEGINNER',
+                        value: '500',
+                        isComplete: yourSteps > 500,
+                      ),
+                      AchievementsWidget(
+                        title: 'MR. NOBODY',
+                        value: '1000',
+                        isComplete: yourSteps > 1000,
+                      ),
+                      AchievementsWidget(
+                        title: 'THE HEALTH CONCIOUS',
+                        value: '10k',
+                        isComplete: yourSteps > 10000,
+                      ),
+                      AchievementsWidget(
+                        title: 'ATHLETE',
+                        value: '20k',
+                        isComplete: yourSteps > 20000,
+                      ),
+                      AchievementsWidget(
+                        title: 'ELITE RUNNER',
+                        value: '50k',
+                        isComplete: yourSteps > 50000,
+                      ),
+                      AchievementsWidget(
+                        title: 'MASTER',
+                        value: '75k',
+                        isComplete: yourSteps > 75000,
+                      ),
+                      AchievementsWidget(
+                        title: 'THE CONQUERER',
+                        value: '100k',
+                        isComplete: yourSteps > 100000,
+                      ),
+                      const SizedBox(height: 30),
+                    ],
+                  );
+                },
               ),
             ],
           ),

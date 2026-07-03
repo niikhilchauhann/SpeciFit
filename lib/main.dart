@@ -49,7 +49,7 @@ Future<void> requestPermissions() async {
     } else {
       debugPrint('Permission denied');
     }
-    
+
     // Request Health Connect permissions
     await HealthService().requestPermissions();
   } else {

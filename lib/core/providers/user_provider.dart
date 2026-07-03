@@ -1,8 +1,11 @@
+import 'package:hive_flutter/hive_flutter.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '/core/providers/auth_provider.dart';
 import '/data/models/users_model.dart';
 import '/data/repositories/user_repository.dart';
+import '/data/adapters/weight_adapter.dart';
 
 class UserNotifier extends Notifier<Users?> {
   final UserRepository _userRepository = UserRepository();
@@ -15,6 +18,20 @@ class UserNotifier extends Notifier<Users?> {
   Future<void> fetchUser(String uid) async {
     final user = await _userRepository.getUser(uid);
     state = user;
+    if (user != null) {
+      await syncWeightTracks(uid);
+    }
+  }
+
+  Future<void> syncWeightTracks(String uid) async {
+    final tracks = await _userRepository.getWeightTracks(uid);
+    var weightBox = await Hive.openBox<WeightTracker>('weight_tracker');
+    for (var track in tracks) {
+      DateTime date = (track['date'] as Timestamp).toDate();
+      double weight = (track['weight'] as num).toDouble();
+      String key = "${date.year}-${date.month}-${date.day}";
+      weightBox.put(key, WeightTracker(date: date, weight: weight));
+    }
   }
 
   Future<void> saveUser(String uid, Users user) async {
@@ -37,6 +54,10 @@ class UserNotifier extends Notifier<Users?> {
         lifestyle: state!.lifestyle,
       );
     }
+  }
+
+  Future<void> addWeightTrack(String uid, DateTime date, double weight) async {
+    await _userRepository.addWeightTrack(uid, date, weight);
   }
 }
 

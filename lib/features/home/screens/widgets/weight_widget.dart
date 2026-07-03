@@ -111,9 +111,10 @@ class _WeightWidgetState extends ConsumerState<WeightWidget> {
 
                 final authState = ref.read(authProvider);
                 if (authState != null) {
-                  await ref.read(userProvider.notifier).updateWeight(
+                  await ref.read(userProvider.notifier).addWeightTrack(
                     authState.uid,
-                    newWeight.toInt(),
+                    selectedDate,
+                    newWeight,
                   );
                 }
 
@@ -255,25 +256,31 @@ class _WeightWidgetState extends ConsumerState<WeightWidget> {
       valueListenable: box.listenable(),
       builder: (context, boxTracker, _) {
         double currentWeight = baseWeight;
-        
-        String key = "${selectedDate.year}-${selectedDate.month}-${selectedDate.day}";
-        if (boxTracker.containsKey(key)) {
-          currentWeight = boxTracker.get(key)!.weight;
-        }
-
-        double initialWeight = currentWeight;
+        double initialWeight = baseWeight;
         int joinYear = selectedDate.year;
 
         if (boxTracker.isNotEmpty) {
           WeightTracker? oldest;
+          WeightTracker? mostRecent;
+          
           for (var tracker in boxTracker.values) {
             if (oldest == null || tracker.date.isBefore(oldest.date)) {
               oldest = tracker;
             }
+            
+            // Find most recent up to selectedDate
+            if (tracker.date.isBefore(selectedDate) || tracker.date.isAtSameMomentAs(selectedDate)) {
+              if (mostRecent == null || tracker.date.isAfter(mostRecent.date)) {
+                mostRecent = tracker;
+              }
+            }
           }
+          
           if (oldest != null) {
-            initialWeight = oldest.weight;
             joinYear = oldest.date.year;
+          }
+          if (mostRecent != null) {
+            currentWeight = mostRecent.weight;
           }
         }
 

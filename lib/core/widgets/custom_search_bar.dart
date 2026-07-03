@@ -1,5 +1,8 @@
+import 'package:specifit/core/widgets/custom_route.dart';
+
 import '/core/utils/exports.dart';
 import '/core/providers/theme_provider.dart';
+import '/features/search/screens/global_search_screen.dart';
 
 
 class CustomSearchBar extends ConsumerWidget {
@@ -11,7 +14,9 @@ class CustomSearchBar extends ConsumerWidget {
 
     return InkWell(
       borderRadius: BorderRadius.circular(30),
-      onTap: () {},
+      onTap: () {
+        Navigator.push(context, createRoute(const GlobalSearchScreen()));
+      },
       child: Container(
         padding: EdgeInsets.all(5),
         width: double.maxFinite,
@@ -26,11 +31,15 @@ class CustomSearchBar extends ConsumerWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             w16,
-            Text(
-              'Search for workouts, meals and more...',
-              style: AppTextStyles.instance.labelLarge,
+            Expanded(
+              child: Text(
+                'Search for workouts, meals and more...',
+                style: AppTextStyles.instance.labelLarge,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+              ),
             ),
-            Spacer(),
+            w16,
             Container(
               padding: EdgeInsets.all(13),
               decoration: BoxDecoration(

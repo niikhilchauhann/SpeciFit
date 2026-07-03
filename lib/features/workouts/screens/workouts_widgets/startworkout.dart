@@ -79,7 +79,7 @@ class _StartWorkoutState extends State<StartWorkout> {
               },
               child: Ink(
                 width: MediaQuery.of(context).size.width - 80,
-                padding: const EdgeInsets.symmetric(vertical: 12),
+                padding: const EdgeInsets.symmetric(vertical: 20),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(40),
                   color: AppColors.instance.primary,
@@ -88,7 +88,9 @@ class _StartWorkoutState extends State<StartWorkout> {
                 child: Text(
                   "Start Workout",
                   textAlign: TextAlign.center,
-                  style: AppTextStyles.instance.title,
+                  style: AppTextStyles.instance.title.copyWith(
+                    color: Colors.white,
+                  ),
                 ),
               ),
             ),

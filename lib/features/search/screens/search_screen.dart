@@ -39,10 +39,13 @@ class _SearchScreenState extends ConsumerState<SearchScreen>
   final LayerLink _layerLink = LayerLink();
 
   Timer? _debounce;
-  bool _isSearching = false;
   bool _hasSubmitted = false;
-  List<NutrientsModel> _results = [];
   OverlayEntry? _overlayEntry;
+
+  // View State
+  final ValueNotifier<bool> _isSearchingNotifier = ValueNotifier<bool>(false);
+  final ValueNotifier<List<NutrientsModel>> _resultsNotifier =
+      ValueNotifier<List<NutrientsModel>>([]);
 
   // Caches
   late final Box _autoCompleteCacheBox;
@@ -56,7 +59,7 @@ class _SearchScreenState extends ConsumerState<SearchScreen>
     super.initState();
     _autoCompleteCacheBox = Hive.box('autocomplete_cache');
     _searchCacheBox = Hive.box('search_cache');
-    
+
     _fadeCtrl = AnimationController(
       vsync: this,
       duration: const Duration(milliseconds: 400),
@@ -74,6 +77,8 @@ class _SearchScreenState extends ConsumerState<SearchScreen>
     _focusNode.dispose();
     _hideDropdown();
     _fadeCtrl.dispose();
+    _isSearchingNotifier.dispose();
+    _resultsNotifier.dispose();
     super.dispose();
   }
 
@@ -166,7 +171,7 @@ class _SearchScreenState extends ConsumerState<SearchScreen>
     _debounce = Timer(const Duration(milliseconds: 400), () async {
       if (value.trim().isEmpty) {
         _hideDropdown();
-        if (mounted) setState(() => _results = []);
+        if (mounted) _resultsNotifier.value = [];
         return;
       }
 
@@ -195,30 +200,26 @@ class _SearchScreenState extends ConsumerState<SearchScreen>
     if (_searchCacheBox.containsKey(query)) {
       final jsonString = _searchCacheBox.get(query) as String;
       final cachedFoods = nutrientsModelFromJson(jsonString);
-      setState(() {
-        _isSearching = false;
-        _results = cachedFoods;
-      });
+      _isSearchingNotifier.value = false;
+      _resultsNotifier.value = cachedFoods;
       _fadeCtrl.forward(from: 0.0);
       return;
     }
 
-    setState(() {
-      _isSearching = true;
-      _results = [];
-    });
+    _isSearchingNotifier.value = true;
+    _resultsNotifier.value = [];
     _fadeCtrl.reset();
     try {
       final foods = await _service.searchFoods(query);
       _searchCacheBox.put(query, nutrientsModelToJson(foods));
       if (mounted) {
-        setState(() => _results = foods);
+        _resultsNotifier.value = foods;
         _fadeCtrl.forward();
       }
     } catch (e) {
       debugPrint('[SearchScreen] error: $e');
     } finally {
-      if (mounted) setState(() => _isSearching = false);
+      if (mounted) _isSearchingNotifier.value = false;
     }
   }
 
@@ -289,35 +290,67 @@ class _SearchScreenState extends ConsumerState<SearchScreen>
       body: SafeArea(
         child: Column(
           children: [
-            _SearchHeader(
-              ctrl: _searchCtrl,
-              focus: _focusNode,
-              layerLink: _layerLink,
-              isSearching: _isSearching,
-              onChanged: _onChanged,
-              onSubmitted: _runSearch,
-              onDiaryTap: () => Navigator.push(
-                context,
-                createRoute(const MealCalendarScreen()),
-              ),
+            ValueListenableBuilder<bool>(
+              valueListenable: _isSearchingNotifier,
+              builder: (context, isSearching, _) {
+                return _SearchHeader(
+                  ctrl: _searchCtrl,
+                  focus: _focusNode,
+                  layerLink: _layerLink,
+                  isSearching: isSearching,
+                  onChanged: _onChanged,
+                  onSubmitted: _runSearch,
+                  onDiaryTap: () => Navigator.push(
+                    context,
+                    createRoute(const MealCalendarScreen()),
+                  ),
+                );
+              },
             ),
             Expanded(
-              child: _results.isEmpty && !_isSearching
-                  ? _EmptyState(hasQuery: _searchCtrl.text.isNotEmpty)
-                  : _isSearching
-                  ? const _LoadingState()
-                  : FadeTransition(
-                      opacity: _fadeAnim,
-                      child: ListView.builder(
-                        padding: const EdgeInsets.fromLTRB(16, 4, 16, 24),
-                        itemCount: _results.length,
-                        itemBuilder: (_, i) => _FoodListTile(
-                          food: _results[i],
-                          onTap: () => _openDetail(_results[i]),
-                          onAdd: () => _addToDiary(_results[i]),
-                        ),
-                      ),
-                    ),
+              child: ValueListenableBuilder<List<NutrientsModel>>(
+                valueListenable: _resultsNotifier,
+                builder: (context, results, _) {
+                  return ValueListenableBuilder<bool>(
+                    valueListenable: _isSearchingNotifier,
+                    builder: (context, isSearching, _) {
+                      if (results.isEmpty && !isSearching) {
+                        return ValueListenableBuilder<TextEditingValue>(
+                          valueListenable: _searchCtrl,
+                          builder: (context, textValue, _) {
+                            return _EmptyState(
+                              hasQuery: textValue.text.isNotEmpty,
+                              onSuggestionTap: (suggestion) {
+                                final query = suggestion
+                                    .split(' ')
+                                    .skip(1)
+                                    .join(' ');
+                                _searchCtrl.text = query;
+                                _runSearch(query);
+                              },
+                            );
+                          },
+                        );
+                      } else if (isSearching) {
+                        return const _LoadingState();
+                      } else {
+                        return FadeTransition(
+                          opacity: _fadeAnim,
+                          child: ListView.builder(
+                            padding: const EdgeInsets.fromLTRB(16, 4, 16, 24),
+                            itemCount: results.length,
+                            itemBuilder: (_, i) => _FoodListTile(
+                              food: results[i],
+                              onTap: () => _openDetail(results[i]),
+                              onAdd: () => _addToDiary(results[i]),
+                            ),
+                          ),
+                        );
+                      }
+                    },
+                  );
+                },
+              ),
             ),
           ],
         ),
@@ -419,22 +452,10 @@ class _SearchHeader extends ConsumerWidget {
                     color: Colors.grey.withValues(alpha: 0.6),
                     fontSize: 15,
                   ),
-                  prefixIcon: isSearching
-                      ? Padding(
-                          padding: const EdgeInsets.all(12),
-                          child: SizedBox(
-                            width: 20,
-                            height: 20,
-                            child: CircularProgressIndicator(
-                              strokeWidth: 2,
-                              color: AppColors.instance.primary,
-                            ),
-                          ),
-                        )
-                      : Icon(
-                          Icons.search_rounded,
-                          color: AppColors.instance.primary,
-                        ),
+                  prefixIcon: Icon(
+                    Icons.search_rounded,
+                    color: AppColors.instance.primary,
+                  ),
                   suffixIcon: ctrl.text.isNotEmpty
                       ? IconButton(
                           icon: const Icon(
@@ -466,8 +487,9 @@ class _SearchHeader extends ConsumerWidget {
 //  Empty state
 // ─────────────────────────────────────────────────────────────────────────────
 class _EmptyState extends StatelessWidget {
-  const _EmptyState({required this.hasQuery});
+  const _EmptyState({required this.hasQuery, this.onSuggestionTap});
   final bool hasQuery;
+  final ValueChanged<String>? onSuggestionTap;
 
   @override
   Widget build(BuildContext context) {
@@ -513,14 +535,22 @@ class _EmptyState extends StatelessWidget {
                 spacing: 8,
                 runSpacing: 8,
                 alignment: WrapAlignment.center,
-                children: [
-                  '🍗 Chicken',
-                  '🍎 Apple',
-                  '🥚 Egg',
-                  '🥛 Milk',
-                  '🍚 Rice',
-                  '🥑 Avocado',
-                ].map((s) => _QuickChip(label: s)).toList(),
+                children:
+                    [
+                          '🍗 Chicken',
+                          '🍎 Apple',
+                          '🥚 Egg',
+                          '🥛 Milk',
+                          '🍚 Rice',
+                          '🥑 Avocado',
+                        ]
+                        .map(
+                          (s) => _QuickChip(
+                            label: s,
+                            onTap: () => onSuggestionTap?.call(s),
+                          ),
+                        )
+                        .toList(),
               ),
             ],
           ],
@@ -531,27 +561,31 @@ class _EmptyState extends StatelessWidget {
 }
 
 class _QuickChip extends StatelessWidget {
-  const _QuickChip({required this.label});
+  const _QuickChip({required this.label, this.onTap});
   final String label;
+  final VoidCallback? onTap;
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
-      decoration: BoxDecoration(
-        border: Border.all(
-          color: AppColors.instance.primary.withValues(alpha: 0.25),
-          width: 1.2,
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
+        decoration: BoxDecoration(
+          border: Border.all(
+            color: AppColors.instance.primary.withValues(alpha: 0.25),
+            width: 1.2,
+          ),
+          borderRadius: BorderRadius.circular(20),
+          color: AppColors.instance.primary.withValues(alpha: 0.05),
         ),
-        borderRadius: BorderRadius.circular(20),
-        color: AppColors.instance.primary.withValues(alpha: 0.05),
-      ),
-      child: Text(
-        label,
-        style: TextStyle(
-          fontSize: 13,
-          color: AppColors.instance.primary,
-          fontWeight: FontWeight.w500,
+        child: Text(
+          label,
+          style: TextStyle(
+            fontSize: 13,
+            color: AppColors.instance.primary,
+            fontWeight: FontWeight.w500,
+          ),
         ),
       ),
     );
@@ -663,9 +697,16 @@ class _FoodListTile extends ConsumerWidget {
                       const SizedBox(height: 4),
                       Row(
                         children: [
-                          Text(
-                            '${food.servingWeight1.split('.').first}g ${food.servingDescription1}',
-                            style: TextStyle(fontSize: 11, color: Colors.grey),
+                          Expanded(
+                            child: Text(
+                              '${food.servingWeight1.split('.').first}g ${food.servingDescription1}',
+                              style: TextStyle(
+                                fontSize: 11,
+                                color: Colors.grey,
+                              ),
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
+                            ),
                           ),
                           const SizedBox(width: 6),
                           Text(
@@ -844,11 +885,14 @@ class _FoodDetailSheet extends ConsumerWidget {
                           width: double.infinity,
                           height: 200,
                           fit: BoxFit.cover,
-                          errorWidget: (context, url, error) => const SizedBox.shrink(),
+                          errorWidget: (context, url, error) =>
+                              const SizedBox.shrink(),
                           placeholder: (context, url) => Container(
                             height: 200,
                             color: Colors.grey.withValues(alpha: 0.1),
-                            child: const Center(child: CircularProgressIndicator()),
+                            child: const Center(
+                              child: CircularProgressIndicator(),
+                            ),
                           ),
                         ),
                       ),
@@ -941,17 +985,21 @@ class _FoodDetailSheet extends ConsumerWidget {
                                     PieChart(
                                       PieChartData(
                                         pieTouchData: PieTouchData(
-                                          touchCallback: (FlTouchEvent e,
-                                              PieTouchResponse? r) {
-                                            if (r != null &&
-                                                r.touchedSection != null) {
-                                              touchedIndexNotifier.value = r
-                                                  .touchedSection!
-                                                  .touchedSectionIndex;
-                                            } else {
-                                              touchedIndexNotifier.value = -1;
-                                            }
-                                          },
+                                          touchCallback:
+                                              (
+                                                FlTouchEvent e,
+                                                PieTouchResponse? r,
+                                              ) {
+                                                if (r != null &&
+                                                    r.touchedSection != null) {
+                                                  touchedIndexNotifier.value = r
+                                                      .touchedSection!
+                                                      .touchedSectionIndex;
+                                                } else {
+                                                  touchedIndexNotifier.value =
+                                                      -1;
+                                                }
+                                              },
                                         ),
                                         borderData: FlBorderData(show: false),
                                         sectionsSpace: 2,
