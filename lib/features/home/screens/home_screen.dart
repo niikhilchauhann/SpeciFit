@@ -56,7 +56,6 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
     final selectedDate = ref.watch(selectedDateProvider);
     final u = ref.watch(userProvider);
     final init = ref.watch(userInitializationProvider);
-
     return Scaffold(
       body: init.when(
         loading: () => const Center(
@@ -220,279 +219,279 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                 s24,
               ],
               if (!kIsWeb) HealthDataWidget().px(AppConstants.defPadOuter),
-              // s16,
-              // RepaintBoundary(
-              //   child: Stack(
-              //     children: [
-              //       SizedBox(
-              //         height: isSmall ? 240 : 360,
-              //         child: ListView.builder(
-              //           itemCount: mealsListData.length,
-              //           scrollDirection: Axis.horizontal,
-              //           padding: EdgeInsets.only(left: isSmall ? 20 : 30),
-              //           itemBuilder: (BuildContext context, int index) {
-              //             return SizedBox(
-              //               width: isSmall ? 155 : 220,
-              //               child: Stack(
-              //                 children: [
-              //                   Padding(
-              //                     padding: const EdgeInsets.only(
-              //                       top: 32,
-              //                       bottom: 10,
-              //                     ),
-              //                     child: Opacity(
-              //                       opacity: isDark ? 0.85 : 1,
-              //                       child: Container(
-              //                         decoration: BoxDecoration(
-              //                           gradient: LinearGradient(
-              //                             colors: [
-              //                               Color(
-              //                                 mealsListData[index].startColor,
-              //                               ),
-              //                               Color(
-              //                                 mealsListData[index].endColor,
-              //                               ),
-              //                             ],
-              //                             begin: Alignment.topLeft,
-              //                             end: Alignment.bottomRight,
-              //                           ),
-              //                           borderRadius: const BorderRadius.only(
-              //                             bottomRight: Radius.circular(8.0),
-              //                             bottomLeft: Radius.circular(8.0),
-              //                             topLeft: Radius.circular(8.0),
-              //                             topRight: Radius.circular(54.0),
-              //                           ),
-              //                         ),
-              //                         margin: EdgeInsets.only(
-              //                           right: isSmall ? 16 : 24,
-              //                         ),
-              //                         padding: EdgeInsets.only(
-              //                           top: 54,
-              //                           left: isSmall ? 15 : 25,
-              //                           right: isSmall ? 15 : 25,
-              //                           bottom: 6,
-              //                         ),
-              //                         child: Column(
-              //                           mainAxisAlignment:
-              //                               MainAxisAlignment.center,
-              //                           crossAxisAlignment:
-              //                               CrossAxisAlignment.start,
-              //                           children: [
-              //                             if (!isSmall) SizedBox(height: 12),
-              //                             Text(
-              //                               mealsListData[index].titleTxt,
-              //                               textAlign: TextAlign.center,
-              //                               style: AppTextStyles
-              //                                   .instance
-              //                                   .titleSmall
-              //                                   .copyWith(
-              //                                     fontSize: isSmall ? 14 : 18,
-              //                                     color: AppColors
-              //                                         .instance
-              //                                         .onSurfaceDark,
-              //                                   ),
-              //                             ),
-              //                             Expanded(
-              //                               child: Padding(
-              //                                 padding: const EdgeInsets.only(
-              //                                   top: 8,
-              //                                   bottom: 8,
-              //                                 ),
-              //                                 child: Row(
-              //                                   mainAxisAlignment:
-              //                                       MainAxisAlignment.start,
-              //                                   crossAxisAlignment:
-              //                                       CrossAxisAlignment.start,
-              //                                   children: [
-              //                                     Text(
-              //                                       mealsListData[index].meals!
-              //                                           .join('\n'),
-              //                                       style: AppTextStyles
-              //                                           .instance
-              //                                           .body
-              //                                           .copyWith(
-              //                                             fontSize: isSmall
-              //                                                 ? 14
-              //                                                 : 16,
-              //                                             color: AppColors
-              //                                                 .instance
-              //                                                 .onSurfaceDark,
-              //                                           ),
-              //                                       overflow: TextOverflow.fade,
-              //                                     ),
-              //                                   ],
-              //                                 ),
-              //                               ),
-              //                             ),
-              //                             Row(
-              //                               mainAxisAlignment:
-              //                                   MainAxisAlignment.start,
-              //                               crossAxisAlignment:
-              //                                   CrossAxisAlignment.end,
-              //                               children: [
-              //                                 Text(
-              //                                   food[index]
-              //                                       .toString()
-              //                                       .split('.')
-              //                                       .first,
-              //                                   textAlign: TextAlign.center,
-              //                                   style: TextStyle(
-              //                                     color: Colors.white,
-              //                                     fontSize: isSmall ? 20 : 24,
-              //                                     fontWeight: FontWeight.bold,
-              //                                   ),
-              //                                 ),
-              //                                 Padding(
-              //                                   padding: EdgeInsets.only(
-              //                                     left: 4,
-              //                                     bottom: 6,
-              //                                   ),
-              //                                   child: Text(
-              //                                     'kcal',
-              //                                     style: AppTextStyles
-              //                                         .instance
-              //                                         .body
-              //                                         .copyWith(
-              //                                           fontSize: isSmall
-              //                                               ? 14
-              //                                               : 16,
-              //                                           color: AppColors
-              //                                               .instance
-              //                                               .onSurfaceDark,
-              //                                         ),
-              //                                   ),
-              //                                 ),
-              //                               ],
-              //                             ),
-              //                           ],
-              //                         ),
-              //                       ),
-              //                     ),
-              //                   ),
-              //                   Positioned(
-              //                     top: 0,
-              //                     left: 0,
-              //                     child: Container(
-              //                       width: 84,
-              //                       height: 84,
-              //                       decoration: BoxDecoration(
-              //                         color: const Color(
-              //                           0xFFFAFAFA,
-              //                         ).withValues(alpha: 0.2),
-              //                         shape: BoxShape.circle,
-              //                       ),
-              //                     ),
-              //                   ),
-              //                   Positioned(
-              //                     top: 0,
-              //                     left: 8,
-              //                     child: SizedBox(
-              //                       width: 80,
-              //                       height: 80,
-              //                       child: Image.asset(
-              //                         mealsListData[index].imagePath,
-              //                       ),
-              //                     ),
-              //                   ),
-              //                 ],
-              //               ),
-              //             );
-              //           },
-              //         ),
-              //       ),
-              //       Positioned.fill(
-              //         child: Container(
-              //           decoration: BoxDecoration(
-              //             gradient: LinearGradient(
-              //               colors: [
-              //                 Colors.transparent,
+              s16,
+              RepaintBoundary(
+                child: Stack(
+                  children: [
+                    SizedBox(
+                      height: isSmall ? 240 : 360,
+                      child: ListView.builder(
+                        itemCount: mealsListData.length,
+                        scrollDirection: Axis.horizontal,
+                        padding: EdgeInsets.only(left: isSmall ? 20 : 30),
+                        itemBuilder: (BuildContext context, int index) {
+                          return SizedBox(
+                            width: isSmall ? 155 : 220,
+                            child: Stack(
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsets.only(
+                                    top: 32,
+                                    bottom: 10,
+                                  ),
+                                  child: Opacity(
+                                    opacity: isDark ? 0.85 : 1,
+                                    child: Container(
+                                      decoration: BoxDecoration(
+                                        gradient: LinearGradient(
+                                          colors: [
+                                            Color(
+                                              mealsListData[index].startColor,
+                                            ),
+                                            Color(
+                                              mealsListData[index].endColor,
+                                            ),
+                                          ],
+                                          begin: Alignment.topLeft,
+                                          end: Alignment.bottomRight,
+                                        ),
+                                        borderRadius: const BorderRadius.only(
+                                          bottomRight: Radius.circular(8.0),
+                                          bottomLeft: Radius.circular(8.0),
+                                          topLeft: Radius.circular(8.0),
+                                          topRight: Radius.circular(54.0),
+                                        ),
+                                      ),
+                                      margin: EdgeInsets.only(
+                                        right: isSmall ? 16 : 24,
+                                      ),
+                                      padding: EdgeInsets.only(
+                                        top: 54,
+                                        left: isSmall ? 15 : 25,
+                                        right: isSmall ? 15 : 25,
+                                        bottom: 6,
+                                      ),
+                                      child: Column(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          if (!isSmall) SizedBox(height: 12),
+                                          Text(
+                                            mealsListData[index].titleTxt,
+                                            textAlign: TextAlign.center,
+                                            style: AppTextStyles
+                                                .instance
+                                                .titleSmall
+                                                .copyWith(
+                                                  fontSize: isSmall ? 14 : 18,
+                                                  color: AppColors
+                                                      .instance
+                                                      .onSurfaceDark,
+                                                ),
+                                          ),
+                                          Expanded(
+                                            child: Padding(
+                                              padding: const EdgeInsets.only(
+                                                top: 8,
+                                                bottom: 8,
+                                              ),
+                                              child: Row(
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.start,
+                                                crossAxisAlignment:
+                                                    CrossAxisAlignment.start,
+                                                children: [
+                                                  Text(
+                                                    mealsListData[index].meals!
+                                                        .join('\n'),
+                                                    style: AppTextStyles
+                                                        .instance
+                                                        .body
+                                                        .copyWith(
+                                                          fontSize: isSmall
+                                                              ? 14
+                                                              : 16,
+                                                          color: AppColors
+                                                              .instance
+                                                              .onSurfaceDark,
+                                                        ),
+                                                    overflow: TextOverflow.fade,
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+                                          ),
+                                          Row(
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.start,
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.end,
+                                            children: [
+                                              Text(
+                                                '2000' // make it dynamic
+                                                    .toString()
+                                                    .split('.')
+                                                    .first,
+                                                textAlign: TextAlign.center,
+                                                style: TextStyle(
+                                                  color: Colors.white,
+                                                  fontSize: isSmall ? 20 : 24,
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
+                                              Padding(
+                                                padding: EdgeInsets.only(
+                                                  left: 4,
+                                                  bottom: 6,
+                                                ),
+                                                child: Text(
+                                                  'kcal',
+                                                  style: AppTextStyles
+                                                      .instance
+                                                      .body
+                                                      .copyWith(
+                                                        fontSize: isSmall
+                                                            ? 14
+                                                            : 16,
+                                                        color: AppColors
+                                                            .instance
+                                                            .onSurfaceDark,
+                                                      ),
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                Positioned(
+                                  top: 0,
+                                  left: 0,
+                                  child: Container(
+                                    width: 84,
+                                    height: 84,
+                                    decoration: BoxDecoration(
+                                      color: const Color(
+                                        0xFFFAFAFA,
+                                      ).withValues(alpha: 0.2),
+                                      shape: BoxShape.circle,
+                                    ),
+                                  ),
+                                ),
+                                Positioned(
+                                  top: 0,
+                                  left: 8,
+                                  child: SizedBox(
+                                    width: 80,
+                                    height: 80,
+                                    child: Image.asset(
+                                      mealsListData[index].imagePath,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          );
+                        },
+                      ),
+                    ),
+                    Positioned.fill(
+                      child: Container(
+                        decoration: BoxDecoration(
+                          gradient: LinearGradient(
+                            colors: [
+                              Colors.transparent,
 
-              //                 Theme.of(
-              //                   context,
-              //                 ).scaffoldBackgroundColor.withValues(alpha: 0.32),
-              //                 Theme.of(
-              //                   context,
-              //                 ).scaffoldBackgroundColor.withValues(alpha: 0.64),
-              //                 Theme.of(
-              //                   context,
-              //                 ).scaffoldBackgroundColor.withValues(alpha: 0.72),
-              //                 Theme.of(
-              //                   context,
-              //                 ).scaffoldBackgroundColor.withValues(alpha: 0.64),
-              //                 Theme.of(
-              //                   context,
-              //                 ).scaffoldBackgroundColor.withValues(alpha: 0.32),
-              //                 Colors.transparent,
-              //               ],
-              //               begin: Alignment.topCenter,
-              //               end: Alignment.bottomCenter,
-              //             ),
-              //           ),
-              //         ),
-              //       ),
-              //       Positioned.fill(
-              //         child: Column(
-              //           mainAxisAlignment: MainAxisAlignment.center,
-              //           children: [
-              //             Container(
-              //               padding: const EdgeInsets.all(15),
-              //               decoration: BoxDecoration(
-              //                 color: isDark
-              //                     ? AppColors.instance.surfaceDark
-              //                     : AppColors.instance.surface,
-              //                 shape: BoxShape.circle,
-              //                 boxShadow: kElevationToShadow[2],
-              //               ),
-              //               child: Icon(
-              //                 Icons.lock,
-              //                 size: 36,
-              //                 color: AppColors.instance.primary,
-              //               ),
-              //             ),
-              //             const SizedBox(height: 14),
-              //             Text(
-              //               "Premium Content",
-              //               style: AppTextStyles.instance.titleLarge.copyWith(
-              //                 fontWeight: FontWeight.bold,
-              //               ),
-              //             ),
-              //             const SizedBox(height: 5),
-              //             Text(
-              //               "Unlock full personalized diet plans",
-              //               style: AppTextStyles.instance.body.copyWith(
-              //                 // color: Colors.grey.shade500,
-              //                 fontSize: 15,
-              //               ),
-              //             ),
-              //             const SizedBox(height: 14),
-              //             ElevatedButton(
-              //               onPressed: () {},
-              //               style: ElevatedButton.styleFrom(
-              //                 backgroundColor: AppColors.instance.primary,
-              //                 foregroundColor: Colors.white,
-              //                 shape: RoundedRectangleBorder(
-              //                   borderRadius: BorderRadius.circular(24),
-              //                 ),
-              //                 padding: const EdgeInsets.symmetric(
-              //                   horizontal: 40,
-              //                   vertical: 14,
-              //                 ),
-              //                 elevation: 2,
-              //               ),
-              //               child: const Text(
-              //                 "Unlock Now",
-              //                 style: TextStyle(
-              //                   fontWeight: FontWeight.bold,
-              //                   fontSize: 16,
-              //                 ),
-              //               ),
-              //             ),
-              //           ],
-              //         ),
-              //       ),
-              //     ],
-              //   ),
-              // ),
+                              Theme.of(
+                                context,
+                              ).scaffoldBackgroundColor.withValues(alpha: 0.32),
+                              Theme.of(
+                                context,
+                              ).scaffoldBackgroundColor.withValues(alpha: 0.64),
+                              Theme.of(
+                                context,
+                              ).scaffoldBackgroundColor.withValues(alpha: 0.72),
+                              Theme.of(
+                                context,
+                              ).scaffoldBackgroundColor.withValues(alpha: 0.64),
+                              Theme.of(
+                                context,
+                              ).scaffoldBackgroundColor.withValues(alpha: 0.32),
+                              Colors.transparent,
+                            ],
+                            begin: Alignment.topCenter,
+                            end: Alignment.bottomCenter,
+                          ),
+                        ),
+                      ),
+                    ),
+                    Positioned.fill(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Container(
+                            padding: const EdgeInsets.all(15),
+                            decoration: BoxDecoration(
+                              color: isDark
+                                  ? AppColors.instance.surfaceDark
+                                  : AppColors.instance.surface,
+                              shape: BoxShape.circle,
+                              boxShadow: kElevationToShadow[2],
+                            ),
+                            child: Icon(
+                              Icons.lock,
+                              size: 36,
+                              color: AppColors.instance.primary,
+                            ),
+                          ),
+                          const SizedBox(height: 14),
+                          Text(
+                            "Premium Content",
+                            style: AppTextStyles.instance.titleLarge.copyWith(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          const SizedBox(height: 5),
+                          Text(
+                            "Unlock full personalized diet plans",
+                            style: AppTextStyles.instance.body.copyWith(
+                              // color: Colors.grey.shade500,
+                              fontSize: 15,
+                            ),
+                          ),
+                          const SizedBox(height: 14),
+                          ElevatedButton(
+                            onPressed: () {},
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: AppColors.instance.primary,
+                              foregroundColor: Colors.white,
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(24),
+                              ),
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 40,
+                                vertical: 14,
+                              ),
+                              elevation: 2,
+                            ),
+                            child: const Text(
+                              "Unlock Now",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 16,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
               WaterDrinkWidget(),
               s24,
             ],
