@@ -1,0 +1,758 @@
+{
+  "Chest": [
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "https://wger.de/media/exercise-images/111/Push-up-1.png,https://wger.de/media/exercise-images/111/Push-up-2.png",
+      "name": "Push-up",
+      "target": "Pectorals",
+      "rank": "A"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "https://wger.de/media/exercise-images/142/Dips-1.png,https://wger.de/media/exercise-images/142/Dips-2.png",
+      "name": "Chest Dips",
+      "target": "Pectorals",
+      "rank": "A"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Barbell",
+      "gifUrl": "https://wger.de/media/exercise-images/192/Bench-press-1.png,https://wger.de/media/exercise-images/192/Bench-press-2.png",
+      "name": "Flat Barbell Bench Press",
+      "target": "Pectorals",
+      "rank": "S+"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Machine",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Seated Pec Deck Fly",
+      "target": "Pectorals",
+      "rank": "S"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Dumbbell",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Incline Dumbbell Bench Press",
+      "target": "Upper Pectorals",
+      "rank": "A"
+    }
+  ],
+  "Chest1": [
+    {
+      "bodyPart": "Chest",
+      "equipment": "Barbell",
+      "gifUrl": "https://wger.de/media/exercise-images/192/Bench-press-1.png,https://wger.de/media/exercise-images/192/Bench-press-2.png",
+      "name": "Flat Barbell Bench Press",
+      "target": "Pectorals",
+      "rank": "S+"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Dumbbell",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Incline Dumbbell Bench Press",
+      "target": "Upper Pectorals",
+      "rank": "A"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Dumbbell",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Decline Dumbbell Press",
+      "target": "Lower Pectorals",
+      "rank": "B"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Machine",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Seated Pec Deck Fly",
+      "target": "Pectorals",
+      "rank": "S"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Close Grip Push-up",
+      "target": "Inner Pectorals",
+      "rank": "C"
+    }
+  ],
+  "Chest2": [
+    {
+      "bodyPart": "Chest",
+      "equipment": "Barbell",
+      "gifUrl": "https://wger.de/media/exercise-images/192/Bench-press-1.png,https://wger.de/media/exercise-images/192/Bench-press-2.png",
+      "name": "Flat Barbell Bench Press",
+      "target": "Pectorals",
+      "rank": "S+"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Dumbbell",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Incline Dumbbell Bench Press",
+      "target": "Upper Pectorals",
+      "rank": "A"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Dumbbell",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Decline Dumbbell Press",
+      "target": "Lower Pectorals",
+      "rank": "B"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Body weight",
+      "gifUrl": "https://wger.de/media/exercise-images/142/Dips-1.png,https://wger.de/media/exercise-images/142/Dips-2.png",
+      "name": "Chest Dips",
+      "target": "Pectorals",
+      "rank": "A"
+    },
+    {
+      "bodyPart": "Chest",
+      "equipment": "Machine",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Seated Pec Deck Fly",
+      "target": "Pectorals",
+      "rank": "S"
+    }
+  ],
+  "Back": [
+    {
+      "bodyPart": "Back",
+      "equipment": "Cable",
+      "gifUrl": "https://wger.de/media/exercise-images/113/Lat-pulldown-1.png,https://wger.de/media/exercise-images/113/Lat-pulldown-2.png",
+      "name": "Lat Pulldown",
+      "target": "Lats",
+      "rank": "S"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Cable",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Seated Cable Row",
+      "target": "Middle Back",
+      "rank": "S"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Machine",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Chest-Supported Machine Row",
+      "target": "Lats",
+      "rank": "S+"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "https://wger.de/media/exercise-images/112/Pull-up-1.png,https://wger.de/media/exercise-images/112/Pull-up-2.png",
+      "name": "Pull-up",
+      "target": "Lats",
+      "rank": "A"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Barbell",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Bent Over Barbell Row",
+      "target": "Middle Back",
+      "rank": "A"
+    }
+  ],
+  "Back1": [
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "https://wger.de/media/exercise-images/112/Pull-up-1.png,https://wger.de/media/exercise-images/112/Pull-up-2.png",
+      "name": "Pull-up",
+      "target": "Lats",
+      "rank": "A"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Barbell",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Bent Over Barbell Row",
+      "target": "Middle Back",
+      "rank": "A"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Barbell",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "T-Bar Row",
+      "target": "Middle Back",
+      "rank": "B"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Cable",
+      "gifUrl": "https://wger.de/media/exercise-images/113/Lat-pulldown-1.png,https://wger.de/media/exercise-images/113/Lat-pulldown-2.png",
+      "name": "Lat Pulldown",
+      "target": "Lats",
+      "rank": "S"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Cable",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Seated Cable Row",
+      "target": "Middle Back",
+      "rank": "S"
+    }
+  ],
+  "Back2": [
+    {
+      "bodyPart": "Back",
+      "equipment": "Body weight",
+      "gifUrl": "https://wger.de/media/exercise-images/112/Pull-up-1.png,https://wger.de/media/exercise-images/112/Pull-up-2.png",
+      "name": "Pull-up",
+      "target": "Lats",
+      "rank": "A"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Barbell",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Bent Over Barbell Row",
+      "target": "Middle Back",
+      "rank": "A"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Barbell",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "T-Bar Row",
+      "target": "Middle Back",
+      "rank": "B"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Machine",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Chest-Supported Machine Row",
+      "target": "Lats",
+      "rank": "S+"
+    },
+    {
+      "bodyPart": "Back",
+      "equipment": "Cable",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Seated Cable Row",
+      "target": "Middle Back",
+      "rank": "S"
+    }
+  ],
+  "Shoulders": [
+    {
+      "bodyPart": "Shoulders",
+      "equipment": "Machine",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Machine Lateral Raise",
+      "target": "Lateral Deltoid",
+      "rank": "S"
+    },
+    {
+      "bodyPart": "Shoulders",
+      "equipment": "Dumbbell",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Seated Dumbbell Shoulder Press",
+      "target": "Anterior Deltoid",
+      "rank": "A"
+    },
+    {
+      "bodyPart": "Shoulders",
+      "equipment": "Cable",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Cable Face Pulls",
+      "target": "Posterior Deltoid",
+      "rank": "A"
+    },
+    {
+      "bodyPart": "Shoulders",
+      "equipment": "Dumbbell",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Dumbbell Front Raise",
+      "target": "Anterior Deltoid",
+      "rank": "D"
+    },
+    {
+      "bodyPart": "Shoulders",
+      "equipment": "Cable",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Cable Lateral Raise",
+      "target": "Lateral Deltoid",
+      "rank": "S+"
+    }
+  ],
+  "Shoulders1": [
+    {
+      "bodyPart": "Shoulders",
+      "equipment": "Barbell",
+      "gifUrl": "https://wger.de/media/exercise-images/120/Shoulder-press-1.png,https://wger.de/media/exercise-images/120/Shoulder-press-2.png",
+      "name": "Standing Overhead Press",
+      "target": "Anterior Deltoid",
+      "rank": "B"
+    },
+    {
+      "bodyPart": "Shoulders",
+      "equipment": "Cable",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Cable Lateral Raise",
+      "target": "Lateral Deltoid",
+      "rank": "S+"
+    },
+    {
+      "bodyPart": "Shoulders",
+      "equipment": "Machine",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Machine Lateral Raise",
+      "target": "Lateral Deltoid",
+      "rank": "S"
+    },
+    {
+      "bodyPart": "Shoulders",
+      "equipment": "Cable",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Cable Face Pulls",
+      "target": "Posterior Deltoid",
+      "rank": "A"
+    },
+    {
+      "bodyPart": "Shoulders",
+      "equipment": "Dumbbell",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Dumbbell Front Raise",
+      "target": "Anterior Deltoid",
+      "rank": "D"
+    }
+  ],
+  "Shoulders2": [
+    {
+      "bodyPart": "Shoulders",
+      "equipment": "Barbell",
+      "gifUrl": "https://wger.de/media/exercise-images/120/Shoulder-press-1.png,https://wger.de/media/exercise-images/120/Shoulder-press-2.png",
+      "name": "Standing Overhead Press",
+      "target": "Anterior Deltoid",
+      "rank": "B"
+    },
+    {
+      "bodyPart": "Shoulders",
+      "equipment": "Dumbbell",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Seated Dumbbell Shoulder Press",
+      "target": "Anterior Deltoid",
+      "rank": "A"
+    },
+    {
+      "bodyPart": "Shoulders",
+      "equipment": "Cable",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Cable Lateral Raise",
+      "target": "Lateral Deltoid",
+      "rank": "S+"
+    },
+    {
+      "bodyPart": "Shoulders",
+      "equipment": "Cable",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Cable Face Pulls",
+      "target": "Posterior Deltoid",
+      "rank": "A"
+    },
+    {
+      "bodyPart": "Shoulders",
+      "equipment": "Machine",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Machine Lateral Raise",
+      "target": "Lateral Deltoid",
+      "rank": "S"
+    }
+  ],
+  "Arms": [
+    {
+      "bodyPart": "Upper Arms",
+      "equipment": "Cable",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Cable Triceps Pushdown",
+      "target": "Triceps",
+      "rank": "A"
+    },
+    {
+      "bodyPart": "Upper Arms",
+      "equipment": "Body weight",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Bench Dips",
+      "target": "Triceps",
+      "rank": "C"
+    },
+    {
+      "bodyPart": "Upper Arms",
+      "equipment": "Machine",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Machine Preacher Curl",
+      "target": "Biceps",
+      "rank": "S"
+    },
+    {
+      "bodyPart": "Upper Arms",
+      "equipment": "Dumbbell",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Alternating Dumbbell Curl",
+      "target": "Biceps",
+      "rank": "A"
+    },
+    {
+      "bodyPart": "Upper Arms",
+      "equipment": "Barbell",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Barbell Bicep Curl",
+      "target": "Biceps",
+      "rank": "B"
+    }
+  ],
+  "Arms1": [
+    {
+      "bodyPart": "Upper Arms",
+      "equipment": "Cable",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Cable Overhead Triceps Extension",
+      "target": "Triceps",
+      "rank": "S+"
+    },
+    {
+      "bodyPart": "Upper Arms",
+      "equipment": "Cable",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Cable Triceps Pushdown",
+      "target": "Triceps",
+      "rank": "A"
+    },
+    {
+      "bodyPart": "Upper Arms",
+      "equipment": "Cable",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Cable Bicep Curl",
+      "target": "Biceps",
+      "rank": "S+"
+    },
+    {
+      "bodyPart": "Upper Arms",
+      "equipment": "Dumbbell",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Alternating Dumbbell Curl",
+      "target": "Biceps",
+      "rank": "A"
+    },
+    {
+      "bodyPart": "Upper Arms",
+      "equipment": "Barbell",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Barbell Bicep Curl",
+      "target": "Biceps",
+      "rank": "B"
+    }
+  ],
+  "Arms2": [
+    {
+      "bodyPart": "Upper Arms",
+      "equipment": "EZ Bar",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "EZ Bar Skullcrusher",
+      "target": "Triceps",
+      "rank": "S"
+    },
+    {
+      "bodyPart": "Upper Arms",
+      "equipment": "Cable",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Cable Overhead Triceps Extension",
+      "target": "Triceps",
+      "rank": "S+"
+    },
+    {
+      "bodyPart": "Upper Arms",
+      "equipment": "Cable",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Cable Bicep Curl",
+      "target": "Biceps",
+      "rank": "S+"
+    },
+    {
+      "bodyPart": "Upper Arms",
+      "equipment": "Machine",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Machine Preacher Curl",
+      "target": "Biceps",
+      "rank": "S"
+    },
+    {
+      "bodyPart": "Upper Arms",
+      "equipment": "Barbell",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Barbell Bicep Curl",
+      "target": "Biceps",
+      "rank": "B"
+    }
+  ],
+  "Legs": [
+    {
+      "bodyPart": "Upper Legs",
+      "equipment": "Barbell",
+      "gifUrl": "https://wger.de/media/exercise-images/116/Squat-1.png,https://wger.de/media/exercise-images/116/Squat-2.png",
+      "name": "Barbell Back Squat",
+      "target": "Quadriceps",
+      "rank": "S"
+    },
+    {
+      "bodyPart": "Upper Legs",
+      "equipment": "Dumbbell",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Dumbbell Walking Lunge",
+      "target": "Quadriceps",
+      "rank": "B"
+    },
+    {
+      "bodyPart": "Upper Legs",
+      "equipment": "Dumbbell",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Dumbbell Glute Bridge",
+      "target": "Glutes",
+      "rank": "C"
+    },
+    {
+      "bodyPart": "Upper Legs",
+      "equipment": "Machine",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Seated Leg Curl",
+      "target": "Hamstrings",
+      "rank": "S"
+    },
+    {
+      "bodyPart": "Upper Legs",
+      "equipment": "Barbell",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Barbell Hip Thrust",
+      "target": "Glutes",
+      "rank": "A"
+    }
+  ],
+  "Legs1": [
+    {
+      "bodyPart": "Upper Legs",
+      "equipment": "Barbell",
+      "gifUrl": "https://wger.de/media/exercise-images/116/Squat-1.png,https://wger.de/media/exercise-images/116/Squat-2.png",
+      "name": "Barbell Back Squat",
+      "target": "Quadriceps",
+      "rank": "S"
+    },
+    {
+      "bodyPart": "Upper Legs",
+      "equipment": "Machine",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Hack Squat",
+      "target": "Quadriceps",
+      "rank": "S+"
+    },
+    {
+      "bodyPart": "Upper Legs",
+      "equipment": "Dumbbell",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Dumbbell Walking Lunge",
+      "target": "Quadriceps",
+      "rank": "B"
+    },
+    {
+      "bodyPart": "Upper Legs",
+      "equipment": "Barbell",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Barbell Hip Thrust",
+      "target": "Glutes",
+      "rank": "A"
+    },
+    {
+      "bodyPart": "Upper Legs",
+      "equipment": "Barbell",
+      "gifUrl": "https://wger.de/media/exercise-images/119/Deadlift-1.png,https://wger.de/media/exercise-images/119/Deadlift-2.png",
+      "name": "Barbell Romanian Deadlift",
+      "target": "Hamstrings",
+      "rank": "A"
+    },
+    {
+      "bodyPart": "Upper Legs",
+      "equipment": "Machine",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Seated Leg Curl",
+      "target": "Hamstrings",
+      "rank": "S"
+    },
+    {
+      "bodyPart": "Upper Legs",
+      "equipment": "Dumbbell",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Dumbbell Bulgarian Split Squat",
+      "target": "Glutes",
+      "rank": "S+"
+    }
+  ],
+  "Legs2": [
+    {
+      "bodyPart": "Upper Legs",
+      "equipment": "Machine",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Hack Squat",
+      "target": "Quadriceps",
+      "rank": "S+"
+    },
+    {
+      "bodyPart": "Upper Legs",
+      "equipment": "Barbell",
+      "gifUrl": "https://wger.de/media/exercise-images/119/Deadlift-1.png,https://wger.de/media/exercise-images/119/Deadlift-2.png",
+      "name": "Barbell Romanian Deadlift",
+      "target": "Hamstrings",
+      "rank": "A"
+    },
+    {
+      "bodyPart": "Upper Legs",
+      "equipment": "Dumbbell",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Dumbbell Bulgarian Split Squat",
+      "target": "Glutes",
+      "rank": "S+"
+    },
+    {
+      "bodyPart": "Upper Legs",
+      "equipment": "Dumbbell",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Sissy Squat",
+      "target": "Glutes",
+      "rank": "A"
+    },
+    {
+      "bodyPart": "Upper Legs",
+      "equipment": "Machine",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Seated Leg Curl",
+      "target": "Hamstrings",
+      "rank": "S"
+    },
+    {
+      "bodyPart": "Upper Legs",
+      "equipment": "Dumbbell",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Dumbbell Glute Bridge",
+      "target": "Glutes",
+      "rank": "C"
+    }
+  ],
+  "Abs": [
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "https://wger.de/media/exercise-images/91/Crunches-1.png,https://wger.de/media/exercise-images/91/Crunches-2.png",
+      "name": "Half sit up",
+      "target": "Abs",
+      "rank": "A"
+    },
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Side bend",
+      "target": "Abs",
+      "rank": "B"
+    },
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Air bike",
+      "target": "Abs",
+      "rank": "A"
+    },
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Alternate heel touchers",
+      "target": "Abs",
+      "rank": "C"
+    }
+  ],
+  "Abs1": [
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Air bike",
+      "target": "Abs",
+      "rank": "A"
+    },
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Alternate heel touchers",
+      "target": "Abs",
+      "rank": "C"
+    },
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "https://wger.de/media/exercise-images/91/Crunches-1.png,https://wger.de/media/exercise-images/91/Crunches-2.png",
+      "name": "Half sit up",
+      "target": "Abs",
+      "rank": "A"
+    },
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Arm slingers hanging bent knee legs",
+      "target": "Abs",
+      "rank": "S"
+    }
+  ],
+  "Abs2": [
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Arm slingers hanging bent knee legs",
+      "target": "Abs",
+      "rank": "S"
+    },
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Air bike",
+      "target": "Abs",
+      "rank": "A"
+    },
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Alternate heel touchers",
+      "target": "Abs",
+      "rank": "C"
+    },
+    {
+      "bodyPart": "Waist",
+      "equipment": "Body weight",
+      "gifUrl": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-1.png,https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
+      "name": "Side bend",
+      "target": "Abs",
+      "rank": "B"
+    }
+  ]
+}

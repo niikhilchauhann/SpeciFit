@@ -1,0 +1,166 @@
+{
+  "HomeWorkouts": {
+    "HomeWorkoutVidsM": {
+      "NoEquip": [
+        {
+          "hwName": "15 Min Full Body Workout",
+          "hwDescription": "No equipment needed home workout",
+          "hwTime": "15:00",
+          "hwVideoId": "vc1E5CfRiyE",
+          "hwStartAt": 0
+        },
+        {
+          "hwName": "10 Min Beginner Workout",
+          "hwDescription": "Easy home workout for beginners",
+          "hwTime": "10:00",
+          "hwVideoId": "UITQGxk1G4o",
+          "hwStartAt": 0
+        }
+      ],
+      "ResistanceBand": [
+        {
+          "hwName": "20 Min Full Body",
+          "hwDescription": "Resistance band only workout",
+          "hwTime": "20:00",
+          "hwVideoId": "lB3Xk2-7vNQ",
+          "hwStartAt": 0
+        }
+      ],
+      "Dumbbell": [
+        {
+          "hwName": "20 Min Dumbbell",
+          "hwDescription": "Full body dumbbell routine",
+          "hwTime": "20:00",
+          "hwVideoId": "xJ2kI8a67-s",
+          "hwStartAt": 0
+        }
+      ],
+      "Yoga": [
+        {
+          "hwName": "30 Min Yoga",
+          "hwDescription": "Yoga flow for men",
+          "hwTime": "30:00",
+          "hwVideoId": "V-AExb2D-EA",
+          "hwStartAt": 0
+        }
+      ],
+      "Stretching": [
+        {
+          "hwName": "15 Min Flexibility",
+          "hwDescription": "Daily stretching routine",
+          "hwTime": "15:00",
+          "hwVideoId": "g_tea8ZNk5A",
+          "hwStartAt": 0
+        }
+      ],
+      "Hiit": [
+        {
+          "hwName": "20 Min HIIT",
+          "hwDescription": "Fat burning HIIT session",
+          "hwTime": "20:00",
+          "hwVideoId": "CBWQGb4LyGg",
+          "hwStartAt": 0
+        }
+      ],
+      "WeightLoss": [
+        {
+          "hwName": "20 Min Fat Burn",
+          "hwDescription": "Intense weight loss workout",
+          "hwTime": "20:00",
+          "hwVideoId": "yT7qNqO2_vU",
+          "hwStartAt": 0
+        }
+      ],
+      "Kegel": [
+        {
+          "hwName": "10 Min Kegel for Men",
+          "hwDescription": "Pelvic floor exercises",
+          "hwTime": "10:00",
+          "hwVideoId": "BfB4xOq2DkM",
+          "hwStartAt": 0
+        }
+      ]
+    },
+    "HomeWorkoutVidsW": {
+      "NoEquip": [
+        {
+          "hwName": "20 Min Full Body Workout",
+          "hwDescription": "No equipment needed",
+          "hwTime": "20:00",
+          "hwVideoId": "2pLT-olgUJs",
+          "hwStartAt": 0
+        },
+        {
+          "hwName": "15 Min Full Body",
+          "hwDescription": "Quick full body burn",
+          "hwTime": "15:00",
+          "hwVideoId": "1f8yoFFdkcY",
+          "hwStartAt": 0
+        }
+      ],
+      "ResistanceBand": [
+        {
+          "hwName": "15 Min Booty",
+          "hwDescription": "Resistance band booty workout",
+          "hwTime": "15:00",
+          "hwVideoId": "8YFv7yC_jM0",
+          "hwStartAt": 0
+        }
+      ],
+      "Dumbbell": [
+        {
+          "hwName": "20 Min Dumbbell",
+          "hwDescription": "Full body dumbbell workout",
+          "hwTime": "20:00",
+          "hwVideoId": "w9K-yD3u4A8",
+          "hwStartAt": 0
+        }
+      ],
+      "Yoga": [
+        {
+          "hwName": "20 Min Yoga",
+          "hwDescription": "Relaxing yoga flow",
+          "hwTime": "20:00",
+          "hwVideoId": "v7AYKMP6rOE",
+          "hwStartAt": 0
+        }
+      ],
+      "Stretching": [
+        {
+          "hwName": "15 Min Flexibility",
+          "hwDescription": "Daily stretching routine",
+          "hwTime": "15:00",
+          "hwVideoId": "qULTwquOuCw",
+          "hwStartAt": 0
+        }
+      ],
+      "Hiit": [
+        {
+          "hwName": "15 Min HIIT",
+          "hwDescription": "Fat burning HIIT workout",
+          "hwTime": "15:00",
+          "hwVideoId": "2MoGxae-zyo",
+          "hwStartAt": 0
+        }
+      ],
+      "WeightLoss": [
+        {
+          "hwName": "20 Min Fat Burn",
+          "hwDescription": "Full body fat burn",
+          "hwTime": "20:00",
+          "hwVideoId": "0A22kUv6W0w",
+          "hwStartAt": 0
+        }
+      ],
+      "Kegel": [
+        {
+          "hwName": "15 Min Kegel for Women",
+          "hwDescription": "Pelvic floor strength",
+          "hwTime": "15:00",
+          "hwVideoId": "1f8yoFFdkcY",
+          "hwStartAt": 0
+        }
+      ]
+    }
+  }
+}
